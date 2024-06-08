@@ -1,0 +1,54 @@
+﻿@page "/Account-Update"
+
+@using SharedClassLibrary.Contracts
+@using SharedClassLibrary.DTOs
+@inject NavigationManager NavManager
+@inject IUserAccount AccountService
+@inject IJSRuntime js
+@inject HttpClient Http
+@attribute [Authorize]
+
+@* <div class="container">
+    <EditForm id="registerForm" Model="User" Enhance OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <h2 style="text-align:center;margin-bottom:20px">Đăng ký tài khoản</h2>
+        <hr />
+        <div class="form-floating mb-3">
+            <input @bind="User.Email" class="form-control inputtext" autocomplete="username" aria-required="true" placeholder="name@example.com" readonly />
+            <label for="email">Email</label>
+            <ValidationMessage For="() => User.Email" class="text-danger" />
+        </div>
+        <div class="form-floating mb-3 password-container">
+            <InputText type="@passwordInputType" @bind-Value="User" class="form-control inputtext" autocomplete="new-password" aria-required="true" placeholder="password" />
+            <label for="password">Mật khẩu</label>
+            <button @onclick="TogglePasswordVisibility" type="button" class="button-open">
+                <i class="bi @passwordIcon"></i>
+            </button>
+            <ValidationMessage For="() => User.Password" class="text-danger" />
+        </div>
+        <div class="form-floating mb-3 password-container">
+            <InputText type="@passwordConfirmInputType" @bind-Value="User" class="form-control inputtext" autocomplete="new-password" aria-required="true" placeholder="password" />
+            <label for="confirm-password">Xác nhận mật khẩu</label>
+            <button @onclick="ToggleConfirmPasswordVisibility" type="button" class="button-open">
+                <i class="bi @"></i>
+            </button>
+            <ValidationMessage For="() => User" class="text-danger" />
+        </div>
+        <button type="submit" class="w-100 btn btn-lg btn-primary button-submit">Đăng ký</button>
+    </EditForm>
+</div> *@
+
+@code {
+    public ApplicationUser User = new ApplicationUser();
+
+    protected override async Task OnInitializedAsync()
+    {
+        var user = await Http.GetFromJsonAsync<ApplicationUser>("api/user/profile");
+        if(user != null)
+        {
+            User = user;
+        }
+    }
+    private async Task HandleSubmit()
+    {}
+}

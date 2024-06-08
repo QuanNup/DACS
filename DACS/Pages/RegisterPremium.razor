@@ -1,0 +1,45 @@
+﻿@page "/Premium/Register"
+@using System.Security.Claims
+@using SharedClassLibrary.DTOs
+@inject HttpClient Http
+
+@if (user != null)
+{
+    <h1>Thông tin người dùng</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="@user?.ImageUser" alt="Ảnh đại diện" class="img-thumbnail" />
+            </div>
+            <div class="col-md-8">
+                <p>Email: @user?.Email</p>
+                <p>Họ và tên: @user?.FullName</p>
+                @if (user.IsPremium)
+                {
+                    <p>Loại tài khoản: Premium</p>
+                }
+                else
+                {
+                    <p>Loại tài khoản: Miễn phí</p>
+                }
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    
+}
+
+@code {
+    private UserDTO user = new UserDTO();
+    protected override async Task OnInitializedAsync()
+    {
+        var User = await Http.GetFromJsonAsync<UserDTO>("/api/user");
+        if (User != null)
+        {
+            user = User;
+        }
+    }
+}

@@ -1,0 +1,73 @@
+﻿@inject IJSRuntime JS
+
+@if (Songs is not null)
+{
+    <div class="item fade-in " @ref="posterCardElement">
+        @if (string.IsNullOrEmpty(Songs.SongImage))
+        {
+            <img class="spotify-img" alt="SongImage" src="@imageUrl" />
+        }
+        else
+        {
+            <img class="spotify-img" alt="SongImage" src="@imageUrl" />
+        }
+        <div class="play">
+            <span class="bi bi-play-fill" style="font-size:2em"></span>
+        </div>
+        <div class="">
+            <h5 class="">@Songs.SongName</h5>
+            <p class="">@Songs?.Artist?.ArtistName</p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="item is-loading">
+        <img class="spotify-img" alt="SongImage" src="/images/PosterPlaceHolder.png" />
+        <div>
+            <div class="play">
+                <span class="bi bi-play-fill" style="font-size:2em"></span>
+            </div>
+            <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-10"></span>
+            </h5>
+            <p class="card-text placeholder-glow">
+                <span class="placeholder col-12"></span>
+            </p>
+        </div>
+    </div>
+}
+
+@code {
+    private ElementReference posterCardElement;
+    [Parameter]
+    public Song? Songs { set; get; }
+    private string? imageUrl;
+    protected override async Task OnInitializedAsync()
+    {
+        if(Songs?.SongImage != null)
+        {
+            imageUrl = $"https://localhost:7196/api/songs/file-images?imageName={Uri.EscapeDataString(Songs.SongImage)}";
+        }
+        else
+        {
+            imageUrl = "/images/Spotify_favicon.png";
+        }
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("VanillaTilt.init", posterCardElement, new
+            {
+                max = 15,
+                speed=300
+            });
+        }
+    }
+    public void Dispose()
+    {
+        JS.InvokeVoidAsync("VanillaTilt.destroy", posterCardElement);
+    }
+}
+

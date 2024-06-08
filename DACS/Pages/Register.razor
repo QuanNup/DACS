@@ -1,0 +1,88 @@
+﻿@page "/account/register"
+@using SharedClassLibrary.Contracts
+@using SharedClassLibrary.DTOs
+@inject NavigationManager NavManager
+@inject IUserAccount AccountService
+@inject IJSRuntime js
+
+<div class="container">
+    <EditForm id="registerForm" Model="User" Enhance OnValidSubmit="HandleRegistration">
+            <DataAnnotationsValidator />
+            <h2 style="text-align:center;margin-bottom:20px">Đăng ký tài khoản</h2>
+            <hr />
+            <div class="form-floating mb-3">
+            <InputText @bind-Value="User.Email" class="form-control inputtext" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                <label for="email">Email</label>
+            <ValidationMessage For="() => User.Email" class="text-danger" />
+            </div>
+            <div class="form-floating mb-3 password-container">
+                <InputText type="@passwordInputType" @bind-Value="User.Password" class="form-control inputtext" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label for="password">Mật khẩu</label>
+                <button @onclick="TogglePasswordVisibility" type="button" class="button-open">
+                    <i class="bi @passwordIcon"></i>
+                </button>
+                <ValidationMessage For="() => User.Password" class="text-danger" />
+            </div>
+            <div class="form-floating mb-3 password-container">
+            <InputText type="@passwordConfirmInputType" @bind-Value="User.ConfirmPassword" class="form-control inputtext" autocomplete="new-password" aria-required="true" placeholder="password" />
+                <label for="confirm-password">Xác nhận mật khẩu</label>
+                <button @onclick="ToggleConfirmPasswordVisibility" type="button" class="button-open">
+                <i class="bi @passwordConfirmIcon"></i>
+                </button>
+                <ValidationMessage For="() => User.ConfirmPassword" class="text-danger" />
+            </div>
+            <button type="submit" class="w-100 btn btn-lg btn-primary button-submit" >Đăng ký</button>
+        </EditForm>
+</div> 
+@code {
+    public bool ShowPassword { get; set; }
+    public bool ShowConfirmPassword { get; set; }
+    private string? Message;
+    public UserDTO User { get; set; } = new();
+    private async Task HandleRegistration()
+    {
+        var (flag, message) = await AccountService.CreateAccount(User);
+        if (flag)
+        {
+            NavManager.NavigateTo("/", forceLoad: true);
+            User = new();
+            return;
+        }
+        Message = message;
+        return;
+
+    }
+    private string passwordInputType = "password";
+    private string passwordConfirmInputType = "password";
+    private string passwordConfirmIcon = "bi-eye-slash";
+    private string passwordIcon = "bi-eye-slash";
+
+    private void ToggleConfirmPasswordVisibility()
+    {
+        if (passwordConfirmInputType == "password")
+        {
+            passwordConfirmInputType = "text";
+            passwordConfirmIcon = "bi-eye";
+        }
+        else
+        {
+            passwordConfirmInputType = "password";
+            passwordConfirmIcon = "bi-eye-slash";
+        }
+    }
+    private void TogglePasswordVisibility()
+    {
+        if (passwordInputType == "password")
+        {
+            passwordInputType = "text";
+            passwordIcon = "bi-eye";
+        }
+        else
+        {
+            passwordInputType = "password";
+            passwordIcon = "bi-eye-slash";
+        }
+    }
+    void ShowPasswordEvent() => ShowPassword = !ShowPassword;
+    void ShowConfirmPasswordEvent() => ShowConfirmPassword = !ShowConfirmPassword;
+}

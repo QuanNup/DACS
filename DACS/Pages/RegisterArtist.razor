@@ -1,0 +1,87 @@
+﻿@page "/register-artist"
+@page "/register-artist/{id:int}"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@inject IConfiguration config
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@attribute [Authorize]
+@if (isUserPremium)
+{
+    <div>
+        <section>
+            <div class="container">
+                <div class="form-group">
+                    <EditForm Model="artists" class="form" OnValidSubmit="HandleSubmit" enctype="multipart/form-data" Enhance>
+                        <div class="create-group">
+                            <div class="input name">
+                                <label for="Name">Tên Tác giả</label>
+                                <InputText @bind-Value="artists.ArtistName" class="form-control inputtext" id="Name" type="text" placeholder="Tên Tác giả"/>
+                            </div>
+                            <div class="input description">
+                                <label for="Description">Mô tả</label>
+                                <InputText @bind-Value="artists.ArtistDescription" class="form-control inputtext" type="text" placeholder="Mô tả" />
+                            </div>
+                            <div class="input type">
+                                <label for="Type">Thể loại</label>
+                                <InputText @bind-Value="artists.Type" class="form-control inputtext" type="text" placeholder="Thể loại" />
+                            </div>
+                            <div class="input ">
+                                <label for="Genres">Giới tính</label>
+                                <InputRadioGroup Name="Genres" @bind-Value="artists.Genres" class="form-control" >
+                                    <InputRadio Value="@("Man")" />Man
+                                    <InputRadio  Value="@("Woman")" />Woman
+                                    <InputRadio  Value="@("Others")" />Others
+                                </InputRadioGroup>
+                            </div>
+                            <div class="input img">
+                                <label for="upload_img">Hình ảnh</label>
+                                <InputFile style="display:none" name="artists.ArtistImage" class="form-control" multiple id="upload_img" accept=".png,.jpg,.jpeg" OnChange="@HandleSelectedFile" />
+                                <img id="image-preview" src="#" alt="Image Preview" style="display: none;">
+                            </div> 
+
+                            <div class="upload-group">
+                                <div class="create-btn">
+                                    <button type="submit" class="btn btn-primary">UPLOAD</button>
+                                </div>
+                            </div>
+                        </div>
+                    </EditForm>
+                </div>
+            </div>
+        </section>
+    </div>
+}
+
+
+
+
+<script>
+    window.previewImage = function (inputId, outputId) {
+        const input = document.getElementById(inputId);
+        const files = input.files;
+
+        if (files.length > 0) {
+            const fileReader = new FileReader();
+            fileReader.onload = function () {
+                const output = document.getElementById(outputId);
+                output.src = fileReader.result;
+                output.style.display = 'block';
+            };
+            fileReader.readAsDataURL(files[0]);
+        }
+
+    };
+
+
+
+</script>
+
+
+
+
+
+
+@code {
+
+}

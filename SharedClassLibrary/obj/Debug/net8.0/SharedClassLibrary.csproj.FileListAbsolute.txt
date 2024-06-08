@@ -1,0 +1,13 @@
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\bin\Debug\net8.0\SharedClassLibrary.deps.json
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\bin\Debug\net8.0\SharedClassLibrary.dll
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\bin\Debug\net8.0\SharedClassLibrary.pdb
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.csproj.AssemblyReference.cache
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.AssemblyInfoInputs.cache
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.AssemblyInfo.cs
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.csproj.CoreCompileInputs.cache
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.sourcelink.json
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.dll
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\refint\SharedClassLibrary.dll
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\SharedClassLibrary.pdb
+E:\DoAnCNTT\DACS\DACSServerApi\SharedClassLibrary\obj\Debug\net8.0\ref\SharedClassLibrary.dll

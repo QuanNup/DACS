@@ -1,0 +1,150 @@
+*[b-4k0i09cgw3] {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    Color: #fff;
+}
+
+Body[b-4k0i09cgw3] {
+    background-color: #121212;
+}
+
+.container[b-4k0i09cgw3] {
+
+    height:100%;
+
+}
+
+h3[b-4k0i09cgw3] {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.container[b-4k0i09cgw3]  form {
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    transform: translateX(-50%);
+    left:50%;
+}
+
+form input:not(#day,#year)[b-4k0i09cgw3] {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 5px 0px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+[b-4k0i09cgw3] .inputtext {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 25px 0px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.agetext[b-4k0i09cgw3] {
+    border: 0;
+    /* text-align: center; */
+    margin: 0 4px;
+    border-radius: 5px;
+    width: 80px;
+    padding-left: 5px;
+    background-color: #121212;
+    border: 1px solid grey;
+}
+
+.age[b-4k0i09cgw3] {
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+}
+
+    .age .agetext:focus[b-4k0i09cgw3] {
+        outline: none;
+    }
+
+
+.btn-box[b-4k0i09cgw3] {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+form button[b-4k0i09cgw3] {
+    width: 110px;
+    height: 40px;
+    background: linear-gradient(to right,#2bbb7f,#25632f);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+.button-submit[b-4k0i09cgw3] {
+    margin:20px 0;
+}
+
+.step-row[b-4k0i09cgw3] {
+    width: 360px;
+    height: 1px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position: relative;
+}
+
+.step-col[b-4k0i09cgw3] {
+    width: 120px;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+#progress[b-4k0i09cgw3] {
+    position: absolute;
+    height: 100%;
+    width: 120px;
+    background: linear-gradient(to right,#2bbb7f,#25632f);
+    transition: ease;
+}
+
+    #progress[b-4k0i09cgw3]::after {
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        right: -20px;
+        top: 0;
+        border-left: 20px solid #25632f;
+    }
+
+.gender[b-4k0i09cgw3] {
+    margin-top: 20px;
+    display: Flex;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+.button-open[b-4k0i09cgw3] {
+    position: absolute;
+    right: -25px; /* Điều chỉnh vị trí của nút ẩn/hiện mật khẩu */
+    top: 12px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.password-container[b-4k0i09cgw3] {
+    position: relative;
+}

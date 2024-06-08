@@ -1,0 +1,133 @@
+﻿@page "/Admin/ListArtists"
+
+@inject HttpClient Http
+@attribute [Authorize(Roles = "Admin")]
+<section style="margin-top:40px;padding-left:120px;padding-right:120px">
+    <h1>Danh sách nghệ sĩ</h1>
+    <div>
+        <a href="/Admin/add-artist" class="btn btn-primary mb-3">Thêm nghệ sĩ</a>
+    </div>
+    <table class="table table-dark table-bordered">
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Tên Nghệ sĩ</td>
+                <td>Mô tả</td>
+                <td>Hình ảnh</td>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var artists in artist)
+            {
+                <tr>
+                    <td>@artists.ArtistId</td>
+                    <td>@artists.ArtistName</td>
+                    <td>
+                        <div id="desc-@artists.ArtistId" class="short-description">@artists?.ArtistDescription</div>
+                        <a href="javascript:void(0)" id="link-desc-@artists.ArtistId" onclick="toggleDescription('desc-@artists.ArtistId')">Xem thêm</a>
+                        
+                    </td>
+                    <td>
+                        <img src="@GetImageUrl(artists?.ArtistImage)" alt="Alternate Text" style="height:55px;width:55px" />
+                    </td>
+                    <td>
+                        <a href="/Admin/add-artist/@artists.ArtistId" class="btn btn-success btn-sm">Sửa</a>
+                        <button class="btn btn-danger btn-sm" @onclick="() => DeleteConfirmation(artists.ArtistId)">Xóa</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @if (showConfirmation)
+    {
+        <div class="modal fade show" style="display: block;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Xác nhận xóa</h5>
+                        <button type="button" class="close" aria-label="Close" @onclick="CancelDelete">
+                            <span aria-hidden="true" style="background-color:black">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có chắc chắn muốn xóa nghệ sĩ này không?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CancelDelete">Hủy</button>
+                        <button type="button" class="btn btn-danger" @onclick="() => Delete(songToDelete)">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop fade show"></div>
+    }
+</section>
+
+
+
+@code {
+    private List<Artist> artist = new List<Artist>();
+    private int songToDelete;
+    private bool showConfirmation = false;
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetFromJsonAsync<List<Artist>>("api/artists");
+        if (response is not null)
+        {
+            artist = response;
+        }
+    }
+    private string GetImageUrl(string? imageName)
+    {
+        if (!string.IsNullOrEmpty(imageName))
+        {
+            string baseUrl = $"https://localhost:7196/api/songs/file-images?imageName=";
+            return $"{baseUrl}{Uri.EscapeDataString(imageName)}";
+        }
+        return "/images/Spotify_favicon.png";
+    }
+    private string GetSongUrl(string? songName)
+    {
+        string baseUrl = $"https://localhost:7196/api/songs/file?filePath=";
+        return $"{baseUrl}{Uri.EscapeDataString(songName)}";
+    }
+    private async Task Delete(int id)
+    {
+        var result = await Http.DeleteAsync($"api/artists/{id}");
+        if (result.IsSuccessStatusCode)
+        {
+            artist = artist.Where(a => a.ArtistId != id).ToList();
+        }
+        else
+        {
+            var errorMessage = await result.Content.ReadAsStringAsync();
+        }
+    }
+    private void DeleteConfirmation(int id)
+    {
+        songToDelete = id;
+        showConfirmation = true;
+    }
+
+    private void CancelDelete()
+    {
+        showConfirmation = false;
+    }
+}
+
+<script>
+    function toggleDescription(id) {
+        var element = document.getElementById(id);
+        var link = document.getElementById("link-" + id);
+        if (element.classList.contains("short-description")) {
+            element.classList.remove("short-description");
+            element.classList.add("full-description");
+            link.innerHTML = "Thu gọn";
+        } else {
+            element.classList.remove("full-description");
+            element.classList.add("short-description");
+            link.innerHTML = "Xem thêm";
+        }
+    }
+</script>

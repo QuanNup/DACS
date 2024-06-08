@@ -1,0 +1,1354 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\layout\\sidebar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\layout\\sidebar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\layout\\sidebar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\layout\\sidebar.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\layout\\footerlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\layout\\footerlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\wwwroot\\js\\audiohelper.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\wwwroot\\js\\audiohelper.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\artistspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\artistspage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\controllers\\songscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\controllers\\likedsongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\controllers\\likedsongscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\controllers\\artistscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\editsong.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\editsong.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\registerartist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\registerartist.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\wwwroot\\css\\blazored-typeahead.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\wwwroot\\css\\blazored-typeahead.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|e:\\doancntt\\dacs\\dacsserverapi\\dacs\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\counter.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|e:\\doancntt\\dacs\\dacsserverapi\\dacs\\wwwroot\\js\\showerror.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\wwwroot\\js\\showerror.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\likedsongs.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\likedsongs.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\editsong.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\editsong.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\editsongbyadmin.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\editsongbyadmin.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\services\\artistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\services\\artistservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\services\\songservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\services\\songservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\services\\adminservicecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\services\\adminservicecs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\entities\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\entities\\artist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\registerartist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\registerartist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\registerpremium.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\registerpremium.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\listuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\listuser.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\premium.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\premium.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\listsong.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\listsong.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\addartists.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\addartists.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\addartists.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\addartists.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\addartists.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\addartists.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\artistspage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\artistspage.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\songdetail.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\songdetail.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\redirecttologin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\redirecttologin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\registerartist.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\registerartist.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\artistspage.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\artistspage.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\song-genre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\song-genre.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\dtos\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\entities\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\register.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\register.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\register.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\premium.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\premium.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\wwwroot\\js\\generateqrcode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\wwwroot\\js\\generateqrcode.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\wwwroot\\js\\blazored-typeahead.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\wwwroot\\js\\blazored-typeahead.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\songdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\songdetail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\likedsongs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\likedsongs.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\listartist.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\listartist.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\layout\\mainlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\contracts\\isong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\contracts\\isong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\listartist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\listartist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\listgenres.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\listgenres.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\updateaccount.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\updateaccount.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\controllers\\songgenrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\controllers\\songgenrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\authentication\\customauthorizationmessagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\authentication\\customauthorizationmessagehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\entities\\likedsongdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\entities\\likedsongdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\entities\\songgenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\entities\\songgenre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\entities\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\entities\\song.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\entities\\likedsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\entities\\likedsong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\dacsserverapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\dacsserverapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\editsongbyadmin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\editsongbyadmin.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\likedsongs.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\likedsongs.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\ui\\songcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\ui\\songcard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\songdetail.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\songdetail.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\login.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\login.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\song-genre.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\song-genre.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\listsong.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\listsong.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\adminpages\\song-genre.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\adminpages\\song-genre.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\sharedclasslibrary\\dtos\\serviceresponses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{749AC160-C184-44CC-BB74-A86807C43D4D}|SharedClassLibrary\\SharedClassLibrary.csproj|solutionrelative:sharedclasslibrary\\dtos\\serviceresponses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacsserverapi\\modelfile\\uploadimagefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2468BC00-F2DB-41C1-9E5D-ADA1DA683EAB}|DACSServerApi\\DACSServerApi.csproj|solutionrelative:dacsserverapi\\modelfile\\uploadimagefile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\layout\\footerlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\layout\\footerlayout.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|E:\\DoAnCNTT\\DACS\\DACSServerApi\\dacs\\pages\\editsong.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{479DE589-9807-4A15-9718-0BF1F258D6C6}|DACS\\DACS.csproj|solutionrelative:dacs\\pages\\editsong.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "DACSServerApi\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAACQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T13:37:10.159Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SongsController.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\SongsController.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\Controllers\\SongsController.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\SongsController.cs",
+              "RelativeToolTip": "DACSServerApi\\Controllers\\SongsController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAAwIEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:37:25.462Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "DACS\\Layout\\MainLayout.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "DACS\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADoBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T10:23:42.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "DACS\\Layout\\NavMenu.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "DACS\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAF4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T19:04:07.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Sidebar.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\Sidebar.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Layout\\Sidebar.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\Sidebar.razor.css",
+              "RelativeToolTip": "DACS\\Layout\\Sidebar.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T13:25:27.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Sidebar.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\Sidebar.razor",
+              "RelativeDocumentMoniker": "DACS\\Layout\\Sidebar.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\Sidebar.razor",
+              "RelativeToolTip": "DACS\\Layout\\Sidebar.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T13:25:02.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FooterLayout.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\FooterLayout.razor",
+              "RelativeDocumentMoniker": "DACS\\Layout\\FooterLayout.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\FooterLayout.razor",
+              "RelativeToolTip": "DACS\\Layout\\FooterLayout.razor",
+              "ViewState": "AQIAAC4BAAAAAAAAAAAjwEMBAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T08:20:23.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "audioHelper.js",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\audioHelper.js",
+              "RelativeDocumentMoniker": "DACS\\wwwroot\\js\\audioHelper.js",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\audioHelper.js",
+              "RelativeToolTip": "DACS\\wwwroot\\js\\audioHelper.js",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwFwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-29T08:17:32.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Program.cs",
+              "RelativeDocumentMoniker": "DACS\\Program.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Program.cs",
+              "RelativeToolTip": "DACS\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T14:01:16.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\appsettings.json",
+              "RelativeDocumentMoniker": "DACSServerApi\\appsettings.json",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\appsettings.json",
+              "RelativeToolTip": "DACSServerApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-05T06:26:49.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArtistsPage.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\ArtistsPage.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\ArtistsPage.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\ArtistsPage.razor",
+              "RelativeToolTip": "DACS\\Pages\\ArtistsPage.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAMAAAC0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T10:04:15.092Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LikedSongsController.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\LikedSongsController.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\Controllers\\LikedSongsController.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\LikedSongsController.cs",
+              "RelativeToolTip": "DACSServerApi\\Controllers\\LikedSongsController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T08:49:25.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ArtistsController.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\ArtistsController.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\Controllers\\ArtistsController.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\ArtistsController.cs",
+              "RelativeToolTip": "DACSServerApi\\Controllers\\ArtistsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:54:51.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RegisterArtist.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterArtist.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\Pages\\RegisterArtist.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterArtist.razor.cs",
+              "RelativeToolTip": "DACS\\Pages\\RegisterArtist.razor.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwEcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T14:08:48.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "index.html",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "DACS\\wwwroot\\index.html",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\index.html",
+              "RelativeToolTip": "DACS\\wwwroot\\index.html",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-30T11:23:51.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "app.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\app.css",
+              "RelativeDocumentMoniker": "DACS\\wwwroot\\css\\app.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\app.css",
+              "RelativeToolTip": "DACS\\wwwroot\\css\\app.css",
+              "ViewState": "AQIAAD4IAAAAAAAAAAAUwGQIAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-29T10:25:19.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "blazored-typeahead.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\blazored-typeahead.css",
+              "RelativeDocumentMoniker": "DACS\\wwwroot\\css\\blazored-typeahead.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\blazored-typeahead.css",
+              "RelativeToolTip": "DACS\\wwwroot\\css\\blazored-typeahead.css",
+              "ViewState": "AQIAALwAAAAAAAAAAAAjwNUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-05T19:18:58.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EditSong.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\EditSong.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\Pages\\EditSong.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\EditSong.razor.cs",
+              "RelativeToolTip": "DACS\\Pages\\EditSong.razor.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAwwGIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T17:22:00.783Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Counter.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Counter.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Counter.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Counter.razor",
+              "RelativeToolTip": "DACS\\Pages\\Counter.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T18:21:29.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "showError.js",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\showError.js",
+              "RelativeDocumentMoniker": "DACS\\wwwroot\\js\\showError.js",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\showError.js",
+              "RelativeToolTip": "DACS\\wwwroot\\js\\showError.js",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwDgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-04T17:23:22.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LikedSongs.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\LikedSongs.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\Pages\\LikedSongs.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\LikedSongs.razor.cs",
+              "RelativeToolTip": "DACS\\Pages\\LikedSongs.razor.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwDgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T19:07:36.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EditSong.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\EditSong.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\EditSong.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\EditSong.razor",
+              "RelativeToolTip": "DACS\\Pages\\EditSong.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T14:05:11.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "EditSongByAdmin.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\EditSongByAdmin.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\EditSongByAdmin.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\EditSongByAdmin.razor.cs",
+              "RelativeToolTip": "DACS\\AdminPages\\EditSongByAdmin.razor.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAwwE4AAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:42:42.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ArtistService.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Services\\ArtistService.cs",
+              "RelativeDocumentMoniker": "DACS\\Services\\ArtistService.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Services\\ArtistService.cs",
+              "RelativeToolTip": "DACS\\Services\\ArtistService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T17:54:33.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SongService.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Services\\SongService.cs",
+              "RelativeDocumentMoniker": "DACS\\Services\\SongService.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Services\\SongService.cs",
+              "RelativeToolTip": "DACS\\Services\\SongService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T18:14:53.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminServicecs.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Services\\AdminServicecs.cs",
+              "RelativeDocumentMoniker": "DACS\\Services\\AdminServicecs.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Services\\AdminServicecs.cs",
+              "RelativeToolTip": "DACS\\Services\\AdminServicecs.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:47:30.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Artist.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\Artist.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\Entities\\Artist.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\Artist.cs",
+              "RelativeToolTip": "SharedClassLibrary\\Entities\\Artist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T11:56:37.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "RegisterArtist.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterArtist.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\RegisterArtist.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterArtist.razor",
+              "RelativeToolTip": "DACS\\Pages\\RegisterArtist.razor",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAgAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-28T14:08:37.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "RegisterPremium.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterPremium.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\RegisterPremium.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterPremium.razor",
+              "RelativeToolTip": "DACS\\Pages\\RegisterPremium.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T15:59:25.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ListUser.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListUser.razor",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\ListUser.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListUser.razor",
+              "RelativeToolTip": "DACS\\AdminPages\\ListUser.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAB3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T17:16:34.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Premium.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Premium.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Premium.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Premium.razor",
+              "RelativeToolTip": "DACS\\Pages\\Premium.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T15:41:21.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ListSong.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListSong.razor",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\ListSong.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListSong.razor",
+              "RelativeToolTip": "DACS\\AdminPages\\ListSong.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAEUAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T08:38:40.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AddArtists.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\AddArtists.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\AddArtists.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\AddArtists.razor.cs",
+              "RelativeToolTip": "DACS\\AdminPages\\AddArtists.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T14:08:57.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AddArtists.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\AddArtists.razor.css",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\AddArtists.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\AddArtists.razor.css",
+              "RelativeToolTip": "DACS\\AdminPages\\AddArtists.razor.css",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAUwFYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-28T14:08:59.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ArtistsPage.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\ArtistsPage.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\Pages\\ArtistsPage.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\ArtistsPage.razor.cs",
+              "RelativeToolTip": "DACS\\Pages\\ArtistsPage.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T10:05:13.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SongDetail.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\SongDetail.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\Pages\\SongDetail.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\SongDetail.razor.cs",
+              "RelativeToolTip": "DACS\\Pages\\SongDetail.razor.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAiwBQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T08:09:07.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AddArtists.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\AddArtists.razor",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\AddArtists.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\AddArtists.razor",
+              "RelativeToolTip": "DACS\\AdminPages\\AddArtists.razor",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwBYAAACKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-28T14:08:55.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "App.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\App.razor",
+              "RelativeDocumentMoniker": "DACS\\App.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\App.razor",
+              "RelativeToolTip": "DACS\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T17:07:08.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "RedirectToLogin.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\RedirectToLogin.razor",
+              "RelativeDocumentMoniker": "DACS\\RedirectToLogin.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\RedirectToLogin.razor",
+              "RelativeToolTip": "DACS\\RedirectToLogin.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T17:11:16.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "_Imports.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\_Imports.razor",
+              "RelativeDocumentMoniker": "DACS\\_Imports.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\_Imports.razor",
+              "RelativeToolTip": "DACS\\_Imports.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T15:38:41.923Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "RegisterArtist.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterArtist.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\RegisterArtist.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\RegisterArtist.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\RegisterArtist.razor.css",
+              "ViewState": "AQIAADUAAAAAAAAAAAAUwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-28T14:08:51.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ArtistsPage.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\ArtistsPage.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\ArtistsPage.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\ArtistsPage.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\ArtistsPage.razor.css",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-29T10:05:26.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Song-Genre.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\Song-Genre.razor",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\Song-Genre.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\Song-Genre.razor",
+              "RelativeToolTip": "DACS\\AdminPages\\Song-Genre.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T07:59:52.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\DTOs\\UserDTO.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\DTOs\\UserDTO.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\DTOs\\UserDTO.cs",
+              "RelativeToolTip": "SharedClassLibrary\\DTOs\\UserDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T11:52:04.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\Entities\\ApplicationUser.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\ApplicationUser.cs",
+              "RelativeToolTip": "SharedClassLibrary\\Entities\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T20:47:08.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Register.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Register.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Register.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Register.razor",
+              "RelativeToolTip": "DACS\\Pages\\Register.razor",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T13:51:36.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Register.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Register.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Register.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Register.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\Register.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T18:39:38.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Home.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Home.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Home.razor",
+              "RelativeToolTip": "DACS\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T10:32:43.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Premium.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Premium.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Premium.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Premium.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\Premium.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-06T15:51:23.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "generateQRCode.js",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\generateQRCode.js",
+              "RelativeDocumentMoniker": "DACS\\wwwroot\\js\\generateQRCode.js",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\generateQRCode.js",
+              "RelativeToolTip": "DACS\\wwwroot\\js\\generateQRCode.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-06T15:11:42.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "SongDetail.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\SongDetail.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\SongDetail.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\SongDetail.razor",
+              "RelativeToolTip": "DACS\\Pages\\SongDetail.razor",
+              "ViewState": "AQIAAEEBAAAAAAAAAAAAAFwBAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T10:01:30.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "LikedSongs.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\LikedSongs.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\LikedSongs.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\LikedSongs.razor",
+              "RelativeToolTip": "DACS\\Pages\\LikedSongs.razor",
+              "ViewState": "AQIAALUAAAAAAAAAAAAAALUAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-02T19:03:33.28Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "ListArtist.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListArtist.razor.css",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\ListArtist.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListArtist.razor.css",
+              "RelativeToolTip": "DACS\\AdminPages\\ListArtist.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-03T08:29:26.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "blazored-typeahead.js",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\blazored-typeahead.js",
+              "RelativeDocumentMoniker": "DACS\\wwwroot\\js\\blazored-typeahead.js",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\blazored-typeahead.js",
+              "RelativeToolTip": "DACS\\wwwroot\\js\\blazored-typeahead.js",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwCkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-05T19:49:09.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ISong.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Contracts\\ISong.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\Contracts\\ISong.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Contracts\\ISong.cs",
+              "RelativeToolTip": "SharedClassLibrary\\Contracts\\ISong.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T07:48:03.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "MainLayout.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\MainLayout.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Layout\\MainLayout.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\MainLayout.razor.css",
+              "RelativeToolTip": "DACS\\Layout\\MainLayout.razor.css",
+              "ViewState": "AQIAAFMBAAAAAAAAAAAAAI8BAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-29T10:24:23.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ListArtist.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListArtist.razor",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\ListArtist.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListArtist.razor",
+              "RelativeToolTip": "DACS\\AdminPages\\ListArtist.razor",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAGQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T08:18:33.255Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ListGenres.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListGenres.razor",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\ListGenres.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListGenres.razor",
+              "RelativeToolTip": "DACS\\AdminPages\\ListGenres.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-03T08:18:59.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "UpdateAccount.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\UpdateAccount.razor",
+              "RelativeDocumentMoniker": "DACS\\Pages\\UpdateAccount.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\UpdateAccount.razor",
+              "RelativeToolTip": "DACS\\Pages\\UpdateAccount.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-05T13:25:32.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "Home.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Home.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Home.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Home.razor.cs",
+              "RelativeToolTip": "DACS\\Pages\\Home.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:07:43.65Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "SongGenresController.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\SongGenresController.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\Controllers\\SongGenresController.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Controllers\\SongGenresController.cs",
+              "RelativeToolTip": "DACSServerApi\\Controllers\\SongGenresController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowD0AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:56:55.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "CustomAuthorizationMessageHandler.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Authentication\\CustomAuthorizationMessageHandler.cs",
+              "RelativeDocumentMoniker": "DACS\\Authentication\\CustomAuthorizationMessageHandler.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Authentication\\CustomAuthorizationMessageHandler.cs",
+              "RelativeToolTip": "DACS\\Authentication\\CustomAuthorizationMessageHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T13:03:04.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "Song.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\Song.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\Entities\\Song.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\Song.cs",
+              "RelativeToolTip": "SharedClassLibrary\\Entities\\Song.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T11:48:59.618Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "SongGenre.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\SongGenre.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\Entities\\SongGenre.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\SongGenre.cs",
+              "RelativeToolTip": "SharedClassLibrary\\Entities\\SongGenre.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T07:58:16.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "LikedSongDetails.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\LikedSongDetails.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\Entities\\LikedSongDetails.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\LikedSongDetails.cs",
+              "RelativeToolTip": "SharedClassLibrary\\Entities\\LikedSongDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:14:42.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "DACSServerApi\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAQwA8AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:13:18.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "LikedSong.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\LikedSong.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\Entities\\LikedSong.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\Entities\\LikedSong.cs",
+              "RelativeToolTip": "SharedClassLibrary\\Entities\\LikedSong.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T09:23:43.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "DACSServerApi\\Properties\\launchSettings.json",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Properties\\launchSettings.json",
+              "RelativeToolTip": "DACSServerApi\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-31T13:47:45.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "DACSServerApi.http",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\DACSServerApi.http",
+              "RelativeDocumentMoniker": "DACSServerApi\\DACSServerApi.http",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\DACSServerApi.http",
+              "RelativeToolTip": "DACSServerApi\\DACSServerApi.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-05-31T13:47:24.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "EditSongByAdmin.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\EditSongByAdmin.razor",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\EditSongByAdmin.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\EditSongByAdmin.razor",
+              "RelativeToolTip": "DACS\\AdminPages\\EditSongByAdmin.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T11:54:19.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "LikedSongs.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\LikedSongs.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\LikedSongs.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\LikedSongs.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\LikedSongs.razor.css",
+              "ViewState": "AQIAAD0BAAAAAAAAAAAmwEoBAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T19:07:30.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "SongCard.razor",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\UI\\SongCard.razor",
+              "RelativeDocumentMoniker": "DACS\\UI\\SongCard.razor",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\UI\\SongCard.razor",
+              "RelativeToolTip": "DACS\\UI\\SongCard.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABIAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-31T11:31:01.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "SongDetail.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\SongDetail.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\SongDetail.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\SongDetail.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\SongDetail.razor.css",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAGAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T10:09:16.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "Login.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Login.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\Login.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\Login.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\Login.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T18:39:22.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Song-Genre.razor.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\Song-Genre.razor.cs",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\Song-Genre.razor.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\Song-Genre.razor.cs",
+              "RelativeToolTip": "DACS\\AdminPages\\Song-Genre.razor.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:00:11.073Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\Data\\AppDbContext.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "DACSServerApi\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:13:13.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ListSong.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListSong.razor.css",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\ListSong.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\ListSong.razor.css",
+              "RelativeToolTip": "DACS\\AdminPages\\ListSong.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T09:47:27.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Song-Genre.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\Song-Genre.razor.css",
+              "RelativeDocumentMoniker": "DACS\\AdminPages\\Song-Genre.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\AdminPages\\Song-Genre.razor.css",
+              "RelativeToolTip": "DACS\\AdminPages\\Song-Genre.razor.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-02T08:00:25.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "ServiceResponses.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\DTOs\\ServiceResponses.cs",
+              "RelativeDocumentMoniker": "SharedClassLibrary\\DTOs\\ServiceResponses.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\SharedClassLibrary\\DTOs\\ServiceResponses.cs",
+              "RelativeToolTip": "SharedClassLibrary\\DTOs\\ServiceResponses.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T08:13:28.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "UploadImageFile.cs",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\ModelFile\\UploadImageFile.cs",
+              "RelativeDocumentMoniker": "DACSServerApi\\ModelFile\\UploadImageFile.cs",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACSServerApi\\ModelFile\\UploadImageFile.cs",
+              "RelativeToolTip": "DACSServerApi\\ModelFile\\UploadImageFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-31T12:32:38.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "FooterLayout.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\FooterLayout.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Layout\\FooterLayout.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Layout\\FooterLayout.razor.css",
+              "RelativeToolTip": "DACS\\Layout\\FooterLayout.razor.css",
+              "ViewState": "AQIAAFQCAAAAAAAAAAAAAGwCAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-29T09:49:12.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "EditSong.razor.css",
+              "DocumentMoniker": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\EditSong.razor.css",
+              "RelativeDocumentMoniker": "DACS\\Pages\\EditSong.razor.css",
+              "ToolTip": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\Pages\\EditSong.razor.css",
+              "RelativeToolTip": "DACS\\Pages\\EditSong.razor.css",
+              "ViewState": "AQIAAFoAAAAAAAAAAAAAAGoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-29T07:00:07.95Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+.modal-content[b-2xasq3gffi] {
+    background-color: black; /* Màu nền đen */
+    color: white; /* Chữ màu trắng */
+    border: 1px solid #fff; /* Viền trắng */
+}
+
+.modal-header[b-2xasq3gffi] {
+    border-bottom: 1px solid #fff; /* Viền dưới của header */
+}
+
+.modal-body[b-2xasq3gffi] {
+    border-bottom: 1px solid #fff; /* Viền dưới của body */
+}
+
+.modal-footer[b-2xasq3gffi] {
+    border-top: 1px solid #fff; /* Viền trên của footer */
+}

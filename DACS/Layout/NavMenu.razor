@@ -1,0 +1,103 @@
+﻿@* <div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">
+            <img src="/images/Spotify Logo.png" alt="Logo" height="50">
+        </a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div> *@
+
+
+
+<div class=" nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="nav-child">
+        <div class="nav-a">
+            <div class="asb">
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+                        </svg>
+                        <span class="nav-content">Trang chủ</span>
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="counter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
+                        <span class="nav-content">Tìm kiếm</span>
+                    </NavLink>
+                </div>
+            </div>
+        </div>
+        <div class="nav-c nav-a">
+            <div class="">
+                <header class="library">
+                    <div class="library-a">
+                        <div class="library-b">
+                            <button class="library-button">
+                                <span class="library-c">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-list" viewBox="0 0 16 16">
+                                        <path d="M12 13c0 1.105-1.12 2-2.5 2S7 14.105 7 13s1.12-2 2.5-2 2.5.895 2.5 2" />
+                                        <path fill-rule="evenodd" d="M12 3v10h-1V3z" />
+                                        <path d="M11 2.82a1 1 0 0 1 .804-.98l3-.6A1 1 0 0 1 16 2.22V4l-5 1z" />
+                                        <path fill-rule="evenodd" d="M0 11.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 7H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5m0-4A.5.5 0 0 1 .5 3H8a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5" />
+                                    </svg>
+                                </span>Thư Viện
+                            </button>
+                        </div>
+                        <span style="display: block;">
+                            <button class="button-plus">
+                                <span class="library-c">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </span>
+                    </div>
+                </header>
+                <div class="play-list">
+                    <div class="play-list-a play-list-b">
+                        <div class="play-list-c">
+                            <div>
+                                <button class="playlist-button" style="margin-block-end: 0px; will-change: transform, opacity;">
+                                    <span class="playlist-span">
+                                        Danh sách phát
+                                    </span>
+                                </button>
+                                <button class="artits-button" style="margin-block-end: 0px; will-change: transform, opacity;">
+                                    <span class="playlist-span">
+                                        Nghệ sĩ
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="abs">
+                <div class="acs">
+                    <NavLink class="nav-link" style="padding:12px" href="/Liked-Songs">
+                        <img src="/images/liked-songs-64.png" style="height:45px;width:45px" alt="Alternate Text" />
+                        <span class="nav-content">Bài hát đã thích</span>
+                    </NavLink>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

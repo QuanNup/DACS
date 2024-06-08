@@ -1,0 +1,431 @@
+﻿@page "/Song-Detail/{id:int}"
+@inject HttpClient Http
+@inject DataShared.SongData songData 
+@inject NavigationManager NavigationManager
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@if (Id != null)
+{
+    <div class="NXiYChVp4Oydfxd7rT5r RMDSGDMFrx8eXHpFphqG">
+        <div class="gHImFiUWOg93pvTefeAD" style=""></div>
+        <div class="gHImFiUWOg93pvTefeAD xYgjMpAjE5XT05aRIezb"></div>
+        <div class="iWTIFTzhRZT0rCD0_gOK contentSpacing">
+            <div></div>
+            <div class="_gLjHpwOxHFwo5nLM8hb _osiFNXU9Cy1X0CYaU9Z" draggable="true">
+                <div class="CmkY1Ag0tJDfnFXbGgju" draggable="false">
+                    <img aria-hidden="false" draggable="false"
+                         loading="lazy" src="@GetImageUrl(Song?.SongImage)"
+                         alt="Chúng Ta Của Tương Lai"
+                         class="mMx2LUixlnN_Fu45JpFB CmkY1Ag0tJDfnFXbGgju _EShSNaBK1wUIaZQFJJQ Yn2Ei5QZn19gria6LjZj"
+                         srcset="@GetImageUrl(Song?.SongImage) 150w, @GetImageUrl(Song?.SongImage) 300w, @GetImageUrl(Song?.SongImage) 320w, @GetImageUrl(Song?.SongImage) 640w"
+                         sizes="(min-width: 1280px) 232px, 192px">
+                </div>
+            </div>
+            <div class="RP2rRchy4i8TIp1CTmb7">
+                <span class="encore-text encore-text-body-small-bold" 
+                      data-encore-id="text">Bài hát</span><span dir="auto" class="rEN7ncpaUeSGL9z0NGQR" draggable="true"
+                                                                data-testid="entityTitle">
+                    <h1 class="encore-text encore-text-headline-large encore-internal-color-text-base" data-encore-id="text"
+                        dir="auto" style="visibility: visible; width: 100%; font-size: 2rem; white-space: normal;">
+                        @Song?.SongName
+                    </h1>
+                </span>
+                <div class="Fb61sprjhh75aOITDnsJ">
+                    <div class="RANLXG3qKB61Bh33I0r2 NO_VO3MRVl9z3z56d8Lg">
+                        <figure class="tp8rO9vtqBGPLOhwcdYv" title="@Song?.Artist?.ArtistName" style="width: 30px; height: 30px; ; margin:10px">
+                            <div class="" style="width: 30px; height: 30px; inset-inline-start: 0px;">
+                                <img aria-hidden="false" draggable="false" loading="eager"
+                                     src="@GetImageUrl(Song?.Artist?.ArtistImage)"
+                                     alt="Sơn Tùng M-TP"
+                                     class="mMx2LUixlnN_Fu45JpFB Xz3tlahv16UpqKBW5HdK Yn2Ei5QZn19gria6LjZj">
+                            </div>
+                        </figure>
+                        <span class="encore-text encore-text-body-small-bold" data-encore-id="text" style="margin: 0 15px;">
+                            <a draggable="false" data-testid="creator-link" href="/artist/@Song?.ArtistId">
+                                @Song?.Artist?.ArtistName
+                            </a>
+                        </span>
+                    </div>
+                    <span class="encore-text encore-text-body-small RANLXG3qKB61Bh33I0r2" data-encore-id="text" style=" margin: 0 15px;">
+                        <a draggable="false" href="/song-detail/@Song.SongId">@Song.SongName</a>
+                    </span>
+                    <span class="encore-text encore-text-body-small RANLXG3qKB61Bh33I0r2"data-encore-id="text">2024</span>
+                    <span class="encore-text encore-text-body-small RANLXG3qKB61Bh33I0r2" data-encore-id="text">4:09</span>
+                    <span class="encore-text encore-text-body-small RANLXG3qKB61Bh33I0r2" data-encore-id="text" data-testid="playcount">13.535.997</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="CoLO4pdSl8LGWyVZA00t" style="background-color: rgb(72, 64, 64);"></div>
+    <div data-overlayscrollbars-initialize="true" data-overlayscrollbars="host">
+        <div class="os-size-observer">
+            <div class="os-size-observer-listener"></div>
+        </div>
+        <div class="" data-overlayscrollbars-viewport="scrollbarHidden overflowXHidden overflowYHidden" tabindex="-1"
+             style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; top: 0px; right: auto; left: 0px; width: calc(100% + 0px); padding: 0px;">
+            <div class="E4q8ogfdWtye7YgotBlN contentSpacing" data-testid="action-bar">
+                <div class="eSg4ntPU2KQLfpLGXAww" data-testid="action-bar-row">
+                    <div class="ix_8kg3iUb9VS5SmTnBY">
+                        <button data-testid="play-button" aria-label="Phát" data-encore-id="buttonPrimary" data-is-icon-only="true" class="Button-sc-qlcn5g-0 kFwvoe" @onclick="PlayPause">
+                            <span class="ButtonInner-sc-14ud5tc-0 rVdSj encore-bright-accent-set">
+                                <span aria-hidden="true" class="IconWrapper__Wrapper-sc-1hf1hjl-0 bjlVXn">
+                                    @if (isPlaying)
+                                    {
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pause-fill Svg-sc-ytk21e-0 bneLcE" viewBox="0 0 16 16">
+                                            <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5m5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5" />
+                                        </svg>
+                                    }
+                                    else
+                                    {
+                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill Svg-sc-ytk21e-0 bneLcE" viewBox="0 0 16 16">
+                                            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
+                                        </svg>
+                                    }
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <button aria-checked="false" data-testid="add-button" class="Button-sc-1dqy6lx-0 hnwraf" aria-label="Lưu vào Thư viện" @onclick="@(()=>ToggleLike(Song.SongId))" data-encore-id="buttonTertiary">
+                        <span aria-hidden="true"class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                                @if(isLiked)
+                                {
+                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 eIeysY">
+                                    <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm16.398-2.38a1 1 0 0 0-1.414-1.413l-6.011 6.01-1.894-1.893a1 1 0 0 0-1.414 1.414l3.308 3.308 7.425-7.425z">
+                                    </path>
+                                </svg>
+                                }
+                                else
+                                {
+                                <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 cqasRA">
+                                    <path d="M11.999 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm-11 9c0-6.075 4.925-11 11-11s11 4.925 11 11-4.925 11-11 11-11-4.925-11-11z"></path
+                                    <path d="M17.999 12a1 1 0 0 1-1 1h-4v4a1 1 0 1 1-2 0v-4h-4a1 1 0 1 1 0-2h4V7a1 1 0 1 1 2 0v4h4a1 1 0 0 1 1 1z"></path>
+                                </svg>
+                                }
+                                
+                            
+                        </span>
+                    </button><button aria-haspopup="menu" data-testid="more-button"
+                                     class="Button-sc-1dqy6lx-0 hnwraf" aria-label="Các tùy chọn khác cho Chúng Ta Của Tương Lai"
+                                     data-encore-id="buttonTertiary">
+                        <span aria-hidden="true"
+                              class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                            <svg data-encore-id="icon" role="img"
+                                 aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE">
+                                <path d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z">
+                                </path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="os-scrollbar os-scrollbar-horizontal os-theme-spotify os-scrollbar-auto-hide os-scrollbar-handle-interactive os-scrollbar-track-interactive os-scrollbar-cornerless os-scrollbar-unusable os-scrollbar-auto-hide-hidden">
+            <div class="os-scrollbar-track">
+                <div class="os-scrollbar-handle" style="width: 100%;"></div>
+            </div>
+        </div>
+        <div class="os-scrollbar os-scrollbar-vertical os-theme-spotify os-scrollbar-auto-hide os-scrollbar-handle-interactive os-scrollbar-track-interactive os-scrollbar-cornerless os-scrollbar-unusable os-scrollbar-auto-hide-hidden">
+            <div class="os-scrollbar-track">
+                <div class="os-scrollbar-handle" style="height: 100%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="contentSpacing">
+        <div class="fsH_X6pBkexdxtu19q5k">
+            <div data-testid="grid-container" class="iKwGKEfAfW7Rkx2_Ba4E" style="--column-count: 2; row-gap: 24px;"></div>
+        </div>
+     
+        <div class="fsH_X6pBkexdxtu19q5k">
+            <div>
+                <span class="encore-text encore-text-body-small ERm7dIKbVoqGwPb_lXPH" data-encore-id="text">
+                    Các bản nhạc
+                    thịnh hành của
+                </span>
+                <h2 class="encore-text encore-text-title-small encore-internal-color-text-base GDA6ugyRoV7ZiqIyOU4d"
+                    data-encore-id="text">
+                    @Song?.Artist?.ArtistName
+                </h2>
+            </div>
+            <div role="grid" aria-rowcount="5" aria-colcount="4" aria-label="các bản nhạc phổ biến"
+                 class="oIeuP60w1eYpFaXESRSg oYS_3GP9pvVjqbFlh9tq" tabindex="0" data-testid="track-list">
+                <div class="JUa6JJNj7R_Y3i4P8YUX" role="presentation" style="height: 280px; --row-height: 56px;">
+                    <div data-testid="top-sentinel" class="lyVkg68L7ycnwyOcO3vj" role="presentation" style="height: 280px;">
+                        <div class="UpiE7J6vPrJIa59qxts4" data-testid="tracklist-row-placeholder"
+                             style="height: calc(100% - 280px);">
+                            <div class="T7WHRub8pynnWPXERh8e fS0C4IgbHviZxIVGC736 teK8wl2D50LT1eQXuxn_"></div>
+                            <div class="T7WHRub8pynnWPXERh8e w46g_LQVSLE9xK399VYf eClbBuaiGMZaigA4bp4e"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e PAqIqZXvse_3h6sDVxU0 mfcu2ThWztZhPLI4BmQ7"></div>
+                        </div>
+                        <div role="presentation" style="height: 280px;"></div>
+                    </div>
+                    <div role="presentation" style="transform: translateY(0px);">
+                        @if (Artist != null && Artist.Songs != null)
+                        {
+                            var index = 1; 
+                            @foreach (var songs in Artist.Songs.Take(5))
+                            {
+                                string formattedTime;
+                                if (formattedSongTimes.TryGetValue(songs.SongFile, out formattedTime))
+                                {
+                                    <div role="row" aria-rowindex="1" aria-selected="false">
+                                    <div data-testid="tracklist-row" class="IjYxRc5luMiDPhKhZVUH UpiE7J6vPrJIa59qxts4"
+                                         draggable="true" role="presentation">
+                                        <div class="fS0C4IgbHviZxIVGC736" role="gridcell" aria-colindex="1">
+                                            <div class="ucB9avGYvzsmzXUOw0S7">
+                                                <span class="encore-text encore-text-body-medium xNyTkXEncSjszLNI65Nq"
+                                                          data-encore-id="text">@index</span>
+                                                    @{
+                                                        index++;
+                                                    }
+                                                      <button class="j2s64Lz8y6VzBLB_V9Gm" aria-label="Phát @songs.SongName của @songs?.Artist?.ArtistName" tabindex="-1">
+                                                    <svg data-encore-id="icon" role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 bneLcE zOsKPnD_9x3KJqQCSmAq" viewBox="0 0 24 24">
+                                                        <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                                        </path>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="w46g_LQVSLE9xK399VYf" role="gridcell" aria-colindex="2">
+                                            <img aria-hidden="false"
+                                                 draggable="false" loading="eager"
+                                                     src="@GetImageUrl(songs.SongImage)" alt=""
+                                                 class="mMx2LUixlnN_Fu45JpFB IqDKYprOtD_EJR1WClPv Yn2Ei5QZn19gria6LjZj" width="40"
+                                                 height="40" style="border-radius: 4px;">
+                                            <div class="_iQpvk1c9OgRAc8KRTlH">
+                                                    <a draggable="false" class="btE2c3IKaOXZ4VNAb8WQ" data-testid="internal-track-link" href="@($"/Song-Detail/{songs.SongId}")" tabindex="-1">
+                                                    <div class="encore-text encore-text-body-medium encore-internal-color-text-base btE2c3IKaOXZ4VNAb8WQ standalone-ellipsis-one-line"
+                                                         data-encore-id="text" dir="auto">
+                                                        @songs.SongName
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="_TH6YAXEzJtzSxhkGSqu" role="gridcell" aria-colindex="3">
+                                            <div class="encore-text encore-text-body-small HxDMwNr5oCxTOyqt85gi"
+                                                 data-encore-id="text">
+                                                13.535.997
+                                            </div>
+                                        </div>
+                                        <div class="PAqIqZXvse_3h6sDVxU0" role="gridcell" aria-colindex="4">
+                                            <button class="Button-sc-1dqy6lx-0 dJzPxg otqy2yIt_BVXLjoundpp" aria-checked="true"
+                                                    aria-label="Thêm vào danh sách phát" data-encore-id="buttonTertiary"
+                                                    tabindex="-1"  @onclick="@(()=>ToggleLiked(songs.SongId))">
+                                                <span aria-hidden="true"
+                                                      class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                                                        @if(isLikedSong.TryGetValue(songs.SongId,out bool isLikedSongs))
+                                                        {
+                                                            @if(isLikedSongs)
+                                                            {
+                                                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 gacXSA">
+                                                                <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm16.398-2.38a1 1 0 0 0-1.414-1.413l-6.011 6.01-1.894-1.893a1 1 0 0 0-1.414 1.414l3.308 3.308 7.425-7.425z">
+                                                                </path>
+                                                            </svg>
+                                                            }
+                                                            else
+                                                            {
+                                                            <svg data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16" class="Svg-sc-ytk21e-0 dYnaPI">
+                                                                <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"></path>
+                                                                <path d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H5a.75.75 0 0 1 0-1.5h2.25V5a.75.75 0 0 1 1.5 0v2.25H11a.75.75 0 0 1 .75.75z"></path>
+                                                            </svg>
+                                                            }
+                                                        }
+                                                </span>
+                                            </button>
+                                            <div class="encore-text encore-text-body-small encore-internal-color-text-subdued l5CmSxiQaap8rWOOpEpk"
+                                                 data-encore-id="text">
+                                                        @formattedTime
+                                            </div><button aria-haspopup="menu"
+                                                          data-testid="more-button" class="Button-sc-1dqy6lx-0 fpsDgO ObVor_8sQq5whKbtWs8a"
+                                                          aria-label="Các tùy chọn khác cho @songs.SongName của @songs?.Artist?.ArtistName"
+                                                          data-encore-id="buttonTertiary" tabindex="-1">
+                                                <span aria-hidden="true"
+                                                      class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                                                    <svg data-encore-id="icon"
+                                                         role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                                         class="Svg-sc-ytk21e-0 dYnaPI">
+                                                        <path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                                                        </path>
+                                                    </svg>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                }
+                                
+                            }
+                        }
+                        
+                       
+                        
+                        
+                    </div>
+                    <div data-testid="bottom-sentinel" class="qnYVzttodnzg9WdrVQ1p" role="presentation"
+                         style="height: calc(100% + 0px);">
+                        <div role="presentation" style="height: 280px;"></div>
+                        <div class="UpiE7J6vPrJIa59qxts4" data-testid="tracklist-row-placeholder"
+                             style="height: calc(100% - 280px);">
+                            <div class="T7WHRub8pynnWPXERh8e fS0C4IgbHviZxIVGC736 teK8wl2D50LT1eQXuxn_"></div>
+                            <div class="T7WHRub8pynnWPXERh8e w46g_LQVSLE9xK399VYf eClbBuaiGMZaigA4bp4e"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e PAqIqZXvse_3h6sDVxU0 mfcu2ThWztZhPLI4BmQ7"></div>
+                        </div>
+                    </div>
+                </div>
+            </div><button aria-expanded="false" class="wi2HeHXOI471ZOh8ncCG">
+                <div class="encore-text encore-text-body-small-bold" data-encore-id="text">Xem thêm</div>
+            </button>
+        </div>
+        <div class="o2TlnuNKxRO5RnB9BpHB">
+            <div class="I5LORTI1u3A6VoUvRCBf">
+                <div class="vreceNX3ABcxyddeS83B CxurIfvXVb_TqGF4q8Yf O5_0cReFdHe81E0xFAD1" style="width: 80px; height: 80px;">
+                    <img aria-hidden="true" draggable="false" loading="lazy"
+                         src="@imageUrl" data-testid="entity-image"
+                         alt="Chúng Ta Của Tương Lai" class="mMx2LUixlnN_Fu45JpFB iJp40IxKg6emF6KYJ414 Yn2Ei5QZn19gria6LjZj"
+                         srcset="@imageUrl 150w, @imageUrl 300w">
+                </div>
+            </div>
+            <div class="TS85Qkpioa31wR0p4kzT">
+                <span data-encore-id="type" class="Type__TypeElement-sc-goli3j-0 gWTpLn">
+                    Từ đĩa
+                    đơn
+                </span>
+                <a draggable="false" href="/Song-detail/@Song?.SongId">
+                    <div class="Type__TypeElement-sc-goli3j-0 gZImOH yL1DLXBc05CR_ACv_NhA" dir="auto" data-encore-id="type">
+                        @Song.SongName
+                    </div>
+                </a>
+            </div>
+            <div class="k5kRkUyoz9znqg_SGOVQ"></div>
+        </div>
+        <div class="MiWZGlZeQCy1tibDTql5">
+            <div role="grid" aria-rowcount="1" aria-colcount="3" aria-label="Chúng Ta Của Tương Lai"
+                 class="oIeuP60w1eYpFaXESRSg oYS_3GP9pvVjqbFlh9tq" tabindex="0" data-testid="track-list">
+                <div class="JUa6JJNj7R_Y3i4P8YUX" role="presentation" style="height: 56px; --row-height: 56px;">
+                    <div data-testid="top-sentinel" class="lyVkg68L7ycnwyOcO3vj" role="presentation" style="height: 56px;">
+                        <div class="UpiE7J6vPrJIa59qxts4" data-testid="tracklist-row-placeholder"
+                             style="height: calc(100% - 56px);">
+                            <div class="T7WHRub8pynnWPXERh8e fS0C4IgbHviZxIVGC736 teK8wl2D50LT1eQXuxn_"></div>
+                            <div class="T7WHRub8pynnWPXERh8e w46g_LQVSLE9xK399VYf jIkZ2Rh9EgRcaDgFo59w"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e PAqIqZXvse_3h6sDVxU0 mfcu2ThWztZhPLI4BmQ7"></div>
+                        </div>
+                        <div role="presentation" style="height: 56px;"></div>
+                    </div>
+                    <div role="presentation" style="transform: translateY(0px);">
+                        <div role="row" aria-rowindex="2" aria-selected="false">
+                            <div data-testid="tracklist-row"
+                                 class="IjYxRc5luMiDPhKhZVUH UpiE7J6vPrJIa59qxts4 ZgAJecvDDVREPXktThbA" draggable="true"
+                                 role="presentation">
+                                <div class="fS0C4IgbHviZxIVGC736" role="gridcell" aria-colindex="1">
+                                    <div class="ucB9avGYvzsmzXUOw0S7">
+                                        <span class="encore-text encore-text-body-medium xNyTkXEncSjszLNI65Nq"
+                                              data-encore-id="text">1</span>
+                                        <button class="j2s64Lz8y6VzBLB_V9Gm" aria-label="" tabindex="-1">
+                                            <svg data-encore-id="icon" role="img" aria-hidden="true"
+                                                 class="Svg-sc-ytk21e-0 bneLcE zOsKPnD_9x3KJqQCSmAq" viewBox="0 0 24 24">
+                                                <path d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="w46g_LQVSLE9xK399VYf" role="gridcell" aria-colindex="2">
+                                    <div class="_iQpvk1c9OgRAc8KRTlH">
+                                        <a draggable="false" class="btE2c3IKaOXZ4VNAb8WQ"
+                                           data-testid="internal-track-link" href="/Song-detail/@Song?.SongId"
+                                           tabindex="-1">
+                                            <div class="encore-text encore-text-body-medium encore-internal-color-text-base btE2c3IKaOXZ4VNAb8WQ standalone-ellipsis-one-line"
+                                                 data-encore-id="text" dir="auto">
+                                                @Song.SongName
+                                            </div>
+                                        </a><span class="encore-text encore-text-body-small encore-internal-color-text-subdued UudGCx16EmBkuFPllvss standalone-ellipsis-one-line"
+                                                  data-encore-id="text">
+                                            <span class="encore-text encore-text-body-small"
+                                                  data-encore-id="text">
+                                                <a draggable="true" dir="auto"
+                                                   href="/artist/@Song?.Artist?.ArtistId" tabindex="-1">
+                                                    @Song?.Artist?.ArtistName
+                                                </a>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="PAqIqZXvse_3h6sDVxU0" role="gridcell" aria-colindex="3">
+                                    <button class="Button-sc-1dqy6lx-0 fpsDgO otqy2yIt_BVXLjoundpp" aria-checked="false"
+                                            aria-label="Thêm vào Bài hát đã thích" data-encore-id="buttonTertiary"
+                                            tabindex="-1">
+                                        <span aria-hidden="true"
+                                              class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                                            <svg data-encore-id="icon"
+                                                 role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                                 class="Svg-sc-ytk21e-0 dYnaPI">
+                                                <path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z">
+                                                </path>
+                                                <path d="M11.75 8a.75.75 0 0 1-.75.75H8.75V11a.75.75 0 0 1-1.5 0V8.75H5a.75.75 0 0 1 0-1.5h2.25V5a.75.75 0 0 1 1.5 0v2.25H11a.75.75 0 0 1 .75.75z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="encore-text encore-text-body-small encore-internal-color-text-subdued l5CmSxiQaap8rWOOpEpk"
+                                         data-encore-id="text">
+                                        @totalTimeString
+                                    </div><button aria-haspopup="menu" data-testid="more-button"
+                                                  class="Button-sc-1dqy6lx-0 fpsDgO ObVor_8sQq5whKbtWs8a"
+                                                  aria-label="Các tùy chọn khác cho Chúng Ta Của Tương Lai của Sơn Tùng M-TP"
+                                                  data-encore-id="buttonTertiary" tabindex="-1">
+                                        <span aria-hidden="true"
+                                              class="IconWrapper__Wrapper-sc-16usrgb-0 hYdsxw">
+                                            <svg data-encore-id="icon"
+                                                 role="img" aria-hidden="true" viewBox="0 0 16 16"
+                                                 class="Svg-sc-ytk21e-0 dYnaPI">
+                                                <path d="M3 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm6.5 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zM16 8a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-testid="bottom-sentinel" class="qnYVzttodnzg9WdrVQ1p" role="presentation"
+                         style="height: calc(100% + 0px);">
+                        <div role="presentation" style="height: 56px;"></div>
+                        <div class="UpiE7J6vPrJIa59qxts4" data-testid="tracklist-row-placeholder"
+                             style="height: calc(100% - 56px);">
+                            <div class="T7WHRub8pynnWPXERh8e fS0C4IgbHviZxIVGC736 teK8wl2D50LT1eQXuxn_"></div>
+                            <div class="T7WHRub8pynnWPXERh8e w46g_LQVSLE9xK399VYf jIkZ2Rh9EgRcaDgFo59w"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e _TH6YAXEzJtzSxhkGSqu zhE9ZlvEhcGV1bDmBswy"></div>
+                            <div class="T7WHRub8pynnWPXERh8e PAqIqZXvse_3h6sDVxU0 mfcu2ThWztZhPLI4BmQ7"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+}
+else
+{
+    <p>welcom</p>
+}
+
+<script>
+    function getStatus(pageId) {
+        return pageAudioStates[pageId] ? 'Playing' : 'Paused';
+    }
+</script>
+

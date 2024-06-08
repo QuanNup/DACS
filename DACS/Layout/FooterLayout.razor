@@ -1,0 +1,456 @@
+﻿@using System.Globalization;
+@using DACS.DataShared
+@inject HttpClient Http
+@if(Song is not null)
+{
+    <div class="footer">
+    <footer class="footer-1">
+        <div class="footer-2">
+            <div class="snFK6_ei0caqvFI6As9Q">
+                <div class="deomraqfhIAoSB3SgXpu" aria-label="Đang phát">
+                    <div class="GQ5_gIWzIqAfBdmQm8yJ IcyWfMS5VkeOhaI7OWIx">
+                        <div draggable="true">
+                            <button type="button" class="HD9s7U5E1RLSWKpXmrqx">
+                                <div class="BFR9Zt3zpL8BATBMiwQB">
+                                    <div class="H0HbpIM3UrcupWIAjLWu" style="width: 56px; height: 56px;">
+                                        <div class="zmOtW0vqqn1qpZrtQ_w9">
+                                            <img src="@imageUrl" aria-hidden="false" draggable="false" loading="eager" class="mMx2LUixlnN_Fu45JpFB FqmFsMhuF4D0s35Z62Js Yn2Ei5QZn19gria6LjZj" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="j96cpCtZAIdqxcDrYHPI iZrIHsls0lCEhoMDA9kc">
+                        <div class="PcH6VnzkkDqD36P93i9Q">
+                            <div class="eSMjmiD29Ox35O95waw6">
+                                <div class="W5cB_o0XkkU7Q8tlTGxq">
+                                    <div class="PGSe59fD1Hwc9yUM2d3U" style="--trans-x: 0px;">
+                                        <div class="encore-text encore-text-body-small PcH6VnzkkDqD36P93i9Q" dir="auto">
+                                            <span draggable="true">
+                                                <a href="#" draggable="false">@Song.SongName </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p2ya1fQ3o9pY4alcW0o4 MrkH0O1OzmNv_oCQdvI8"></div>
+                        </div>
+                        <div class="w_TTPh4y9H1YD6UrTMHa r6Psl2_K_0vpdX6vFLQd">
+                            <div class="eSMjmiD29Ox35O95waw6">
+                                <div class="W5cB_o0XkkU7Q8tlTGxq">
+                                    <div class="PGSe59fD1Hwc9yUM2d3U">
+                                        <div class="encore-text encore-text-marginal encore-internal-color-text-subdued w_TTPh4y9H1YD6UrTMHa">
+                                            <span >
+                                                 <a draggable="true" data-testid="context-item-info-artist" dir="auto" href="/artist/5dfZ5uSmzR7VQK0udbAVpf">@Song?.Artist?.ArtistName</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <audio @ref="audioRef" id="audioPlayer" preload="none" src="@songUrl" @onplay="OnPlay" @onpause="OnPause" @ontimeupdate="OnTimeUpdate"></audio>
+                <div class="player-controls" aria-label="Điều khiển trình phát">
+                    <div class="player-controls__buttons player-controls__buttons--new-icons">
+                        <div class="player-controls__left">
+                            <button class="button-player-1 button-player-2" style="--button-size: 32px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5" />
+                                    <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192" />
+                                </svg>
+                            </button>
+                            <button class="button-player-3" style="--button-size: 32px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skip-start-fill" viewBox="0 0 16 16">
+                                    <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <button class="button-player-play" style="--button-size: 32px;"  @onclick="PlayPause">
+                            <i class="bi @(isPlaying ?  "bi-pause-fill": "bi-play-fill" )"></i>
+                        </button>
+                        <div class="player-controls__right">
+                            <button class="button-player-4" style="--button-size: 32px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
+                                    <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z" />
+                                </svg>
+                            </button>
+                            <button class="button-player-5" style="--button-size: 32px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                                    <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </div>
+                    <div class="playback-bar">
+                        <div class="encore-text encore-text-marginal encore-internal-color-text-subdued playback-bar__progress-time-elapsed">
+                            @currentTimeString
+                        </div>
+                        <div class="player-line DFtdzavKSbEhwKYkPTa6 ZqlJ1uWjMeen9ye7Y7GC" data-testid="playback-progressbar">
+                            <label class="hidden-visually">
+                                Thay đổi tiến trình
+                                <input  type="range" Min="0" Max="@getTotal()" Step="1" aria-valuetext="@currentTimeString/@totalTimeString" Value="@getCurrent()" @oninput="ChangeCurrentTime" />
+                            </label>
+                            <div class="TywOcKZEqNynWecCiATc progress-music" @ref="progressContainer"  data-testid="progress-bar" style="--progress-bar-transform: @GetFormattedProgressPercentage()%; --progress-bar-duration: 1000ms;">
+                                <div class="NoOAOv6U6vtqj_ybS1Cd" data-testid="progress-bar-background">
+                                    <div class="w699O0LgQRghXyl3bs9u">
+                                        <div class="epWhU7hHGktzlO_dop6z">
+                                        </div>
+                                    </div>
+                                    <div class="Vis45PPawTyED7Lt2_LI" >
+                                    </div>
+                                </div>
+                                <div style="width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encore-text encore-text-marginal encore-internal-color-text-subdued kQqIrFPM5PjMWb5qUS56">
+                            @totalTimeString
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pLifNBuHRY8cZkZyEqwL">
+                <div class="mwpJrmCgLlVkJVtWjlI1">
+                    <div class="G4n5bTzWUvlftzDwrFVG ExuDUBJ7bk8vT6INnm9F" dir="ltr" style="--button-size: 32px; --slider-width: 100%;">
+                        <button class="rT09bwCEwXECMbLbX_7A control-button" aria-label="" @onclick="ToggleMute">
+                            <i class="bi @(isMute ? "bi-volume-mute-fill": "bi-volume-down-fill" ) "></i>
+                        </button>
+                        <div class="tIr7C6B0Pt6YKdOnqaqj">
+                            <div class="p1ULRzPc4bD8eQ4T_wyp DFtdzavKSbEhwKYkPTa6">
+                                <label class="hidden-visually">
+                                    Thay đổi âm lượng
+                                    <input type="range" min="0" max="100" step="1" Value="@getvolumePercentage()" @oninput="ChangeVolume">
+                                </label>
+                                <div class="TywOcKZEqNynWecCiATc" @ref="sliderContainer" data-testid="progress-bar" style="--progress-bar-transform:@GetFormattedVolumePercentage()%; --progress-bar-duration: NaNms;">
+                                    <div class="NoOAOv6U6vtqj_ybS1Cd" data-testid="progress-bar-background">
+                                        <div class="w699O0LgQRghXyl3bs9u">
+                                            <div class="epWhU7hHGktzlO_dop6z">
+                                            </div>
+                                        </div>
+                                        <div class="Vis45PPawTyED7Lt2_LI"></div>
+                                    </div>
+                                    <div style="width: 100%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+}
+else
+{
+    <div class="footer">
+        <footer class="footer-1">
+            <div class="footer-2">
+                <div class="snFK6_ei0caqvFI6As9Q">
+                    <div class="deomraqfhIAoSB3SgXpu" aria-label="Đang phát">
+                        <div class="GQ5_gIWzIqAfBdmQm8yJ IcyWfMS5VkeOhaI7OWIx">
+                            <div draggable="true">
+                                <button type="button" class="HD9s7U5E1RLSWKpXmrqx">
+                                    <div class="BFR9Zt3zpL8BATBMiwQB">
+                                        <div class="H0HbpIM3UrcupWIAjLWu" style="width: 56px; height: 56px;">
+                                            <div class="zmOtW0vqqn1qpZrtQ_w9">
+                                                <img src="/images/Spotify_favicon.png" aria-hidden="false" draggable="false" loading="eager" class="mMx2LUixlnN_Fu45JpFB FqmFsMhuF4D0s35Z62Js Yn2Ei5QZn19gria6LjZj" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="j96cpCtZAIdqxcDrYHPI iZrIHsls0lCEhoMDA9kc">
+                            <div class="PcH6VnzkkDqD36P93i9Q">
+                                <div class="eSMjmiD29Ox35O95waw6">
+                                    <div class="W5cB_o0XkkU7Q8tlTGxq">
+                                        <div class="PGSe59fD1Hwc9yUM2d3U" style="--trans-x: 0px;">
+                                            <div class="encore-text encore-text-body-small PcH6VnzkkDqD36P93i9Q" dir="auto">
+                                                <span draggable="true">
+                                                    <a href="#" draggable="false"> </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="p2ya1fQ3o9pY4alcW0o4 MrkH0O1OzmNv_oCQdvI8"></div>
+                            </div>
+                            <div class="w_TTPh4y9H1YD6UrTMHa r6Psl2_K_0vpdX6vFLQd">
+                                <div class="eSMjmiD29Ox35O95waw6">
+                                    <div class="W5cB_o0XkkU7Q8tlTGxq">
+                                        <div class="PGSe59fD1Hwc9yUM2d3U">
+                                            <div class="encore-text encore-text-marginal encore-internal-color-text-subdued w_TTPh4y9H1YD6UrTMHa">
+                                                <span draggable="true" dir="auto">
+
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player">
+                    <audio @ref="audioRef" id="audioPlayer" preload="none" src="" @onplay="OnPlay" @onpause="OnPause" @ontimeupdate="OnTimeUpdate"></audio>
+                    <div class="player-controls" aria-label="Điều khiển trình phát">
+                        <div class="player-controls__buttons player-controls__buttons--new-icons">
+                            <div class="player-controls__left">
+                                <button class="button-player-1 button-player-2" style="--button-size: 32px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shuffle" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M0 3.5A.5.5 0 0 1 .5 3H1c2.202 0 3.827 1.24 4.874 2.418.49.552.865 1.102 1.126 1.532.26-.43.636-.98 1.126-1.532C9.173 4.24 10.798 3 13 3v1c-1.798 0-3.173 1.01-4.126 2.082A9.6 9.6 0 0 0 7.556 8a9.6 9.6 0 0 0 1.317 1.918C9.828 10.99 11.204 12 13 12v1c-2.202 0-3.827-1.24-4.874-2.418A10.6 10.6 0 0 1 7 9.05c-.26.43-.636.98-1.126 1.532C4.827 11.76 3.202 13 1 13H.5a.5.5 0 0 1 0-1H1c1.798 0 3.173-1.01 4.126-2.082A9.6 9.6 0 0 0 6.444 8a9.6 9.6 0 0 0-1.317-1.918C4.172 5.01 2.796 4 1 4H.5a.5.5 0 0 1-.5-.5" />
+                                        <path d="M13 5.466V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m0 9v-3.932a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192" />
+                                    </svg>
+                                </button>
+                                <button class="button-player-3" style="--button-size: 32px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skip-start-fill" viewBox="0 0 16 16">
+                                        <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.54-.313 1.232.066 1.232.696v7.384c0 .63-.692 1.01-1.232.697L5 8.753V12a.5.5 0 0 1-1 0z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <button class="button-player-play" style="--button-size: 32px;" >
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                            <div class="player-controls__right">
+                                <button class="button-player-4" style="--button-size: 32px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-skip-end-fill" viewBox="0 0 16 16">
+                                        <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.693 3.3 4 3.678 4 4.308v7.384c0 .63.692 1.01 1.233.697L11.5 8.753V12a.5.5 0 0 0 1 0z" />
+                                    </svg>
+                                </button>
+                                <button class="button-player-5" style="--button-size: 32px;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-repeat" viewBox="0 0 16 16">
+                                        <path d="M11 5.466V4H5a4 4 0 0 0-3.584 5.777.5.5 0 1 1-.896.446A5 5 0 0 1 5 3h6V1.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384l-2.36 1.966a.25.25 0 0 1-.41-.192m3.81.086a.5.5 0 0 1 .67.225A5 5 0 0 1 11 13H5v1.466a.25.25 0 0 1-.41.192l-2.36-1.966a.25.25 0 0 1 0-.384l2.36-1.966a.25.25 0 0 1 .41.192V12h6a4 4 0 0 0 3.585-5.777.5.5 0 0 1 .225-.67Z" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="playback-bar">
+                            <div class="encore-text encore-text-marginal encore-internal-color-text-subdued playback-bar__progress-time-elapsed">
+                                @currentTimeString
+                            </div>
+                            <div class="player-line DFtdzavKSbEhwKYkPTa6 ZqlJ1uWjMeen9ye7Y7GC" data-testid="playback-progressbar">
+                                <label class="hidden-visually">
+                                    Thay đổi tiến trình
+                                    <input type="range" Min="0" Max="@getTotal()" Step="1" aria-valuetext="@currentTimeString/@totalTimeString" Value="@getCurrent()" @oninput="ChangeCurrentTime" />
+                                </label>
+                                <div class="TywOcKZEqNynWecCiATc progress-music" @ref="progressContainer" data-testid="progress-bar" style="--progress-bar-transform: @GetFormattedProgressPercentage()%; --progress-bar-duration: 1000ms;">
+                                    <div class="NoOAOv6U6vtqj_ybS1Cd" data-testid="progress-bar-background">
+                                        <div class="w699O0LgQRghXyl3bs9u">
+                                            <div class="epWhU7hHGktzlO_dop6z">
+                                            </div>
+                                        </div>
+                                        <div class="Vis45PPawTyED7Lt2_LI">
+                                        </div>
+                                    </div>
+                                    <div style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="encore-text encore-text-marginal encore-internal-color-text-subdued kQqIrFPM5PjMWb5qUS56">
+                                @totalTimeString
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pLifNBuHRY8cZkZyEqwL">
+                    <div class="mwpJrmCgLlVkJVtWjlI1">
+                        <div class="G4n5bTzWUvlftzDwrFVG ExuDUBJ7bk8vT6INnm9F" dir="ltr" style="--button-size: 32px; --slider-width: 100%;">
+                            <button class="rT09bwCEwXECMbLbX_7A control-button" aria-label="" @onclick="ToggleMute">
+                                <i class="bi @(isMute ? "bi-volume-mute-fill": "bi-volume-down-fill" ) "></i>
+                            </button>
+                            <div class="tIr7C6B0Pt6YKdOnqaqj">
+                                <div class="p1ULRzPc4bD8eQ4T_wyp DFtdzavKSbEhwKYkPTa6">
+                                    <label class="hidden-visually">
+                                        Thay đổi âm lượng
+                                        <input type="range" min="0" max="100" step="1" Value="@getvolumePercentage()" @oninput="ChangeVolume">
+                                    </label>
+                                    <div class="TywOcKZEqNynWecCiATc" @ref="sliderContainer" data-testid="progress-bar" style="--progress-bar-transform:@GetFormattedVolumePercentage()%; --progress-bar-duration: NaNms;">
+                                        <div class="NoOAOv6U6vtqj_ybS1Cd" data-testid="progress-bar-background">
+                                            <div class="w699O0LgQRghXyl3bs9u">
+                                                <div class="epWhU7hHGktzlO_dop6z">
+                                                </div>
+                                            </div>
+                                            <div class="Vis45PPawTyED7Lt2_LI"></div>
+                                        </div>
+                                        <div style="width: 100%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+}
+
+
+
+
+@code{
+    [Parameter]
+    public Song? Song { set; get; }
+    private ElementReference sliderContainer;
+    private ElementReference progressContainer;
+    private ElementReference audioRef;
+    private bool isPlaying = false;
+    private double currentTime = 0;
+    private double totalTime = 0;
+    private string currentTimeString => TimeSpan.FromSeconds(currentTime).ToString(@"mm\:ss");
+    private string totalTimeString => TimeSpan.FromSeconds(totalTime).ToString(@"mm\:ss");
+    private double progressPercentage = 0;
+    private bool isMute =false;
+    private double volumePercentage = 100;
+    private bool hasAudioSource;
+    private string? songUrl;
+    private string? imageUrl;
+    [Inject]
+    private IJSRuntime JSRuntime { get; set; }
+
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (Song != null)
+        {
+            songUrl = $"https://localhost:7196/api/songs/file?filePath={Uri.EscapeDataString(Song.SongFile)}";
+            if (Song.SongImage == null)
+            {
+                imageUrl = "/images/Spotify_favicon.png";
+            }
+            else
+            {
+                imageUrl = $"https://localhost:7196/api/songs/file-images?imageName={Uri.EscapeDataString(Song.SongImage)}";
+            }
+            StateHasChanged();
+        }
+        if (!string.IsNullOrEmpty(songUrl))
+        {
+            totalTime = await JSRuntime.InvokeAsync<double>("audioHelper.getAudioDuration", songUrl);
+        }
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {        
+            await JSRuntime.InvokeVoidAsync("audioHelper.addTimeUpdateEvent", audioRef, DotNetObjectReference.Create(this));
+            await JSRuntime.InvokeVoidAsync("audioHelper.initializeProgressBar", progressContainer, audioRef, DotNetObjectReference.Create(this));
+            await JSRuntime.InvokeVoidAsync("volumeHelper.initializeVolumeSlider", sliderContainer, DotNetObjectReference.Create(this));
+        }        
+    }
+    private async Task PlayPause()
+    {
+        try
+        {
+            if (isPlaying)
+            {
+                await JSRuntime.InvokeVoidAsync("audioHelper.pause", audioRef);
+            }
+            else
+            {
+                await JSRuntime.InvokeVoidAsync("audioHelper.play", audioRef);
+            }
+            isPlaying = !isPlaying;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error in PlayPause: {ex.Message}");
+        }
+    }
+    
+
+    private async Task OnPlay()
+    {
+        isPlaying = true;
+    }
+
+    private async Task OnPause()
+    {
+        isPlaying = false;
+    }
+
+    private async Task OnTimeUpdate()
+    {
+        try
+        {
+            currentTime = await JSRuntime.InvokeAsync<double>("audioHelper.getCurrentTime", audioRef);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error getting current time: {ex.Message}");
+        }
+    }
+
+    private async Task ChangeCurrentTime(ChangeEventArgs e)
+    {
+        if (double.TryParse(e.Value.ToString(), out double newTime))
+        {
+            await JSRuntime.InvokeVoidAsync("audioHelper.setCurrentTime", audioRef, newTime);
+        }
+    }
+    [JSInvokable("UpdateProgress")]
+    public void UpdateProgress(double percentage)
+    {
+        progressPercentage = percentage;
+        currentTime = (percentage / 100) * totalTime;
+        StateHasChanged();
+    }
+    [JSInvokable("UpdateCurrentTime")]
+    public void UpdateCurrentTime(double time)
+    {
+        currentTime = time;
+        progressPercentage = currentTime / totalTime * 100;
+        StateHasChanged();  
+    }
+    private string GetFormattedProgressPercentage()
+    {
+        return progressPercentage.ToString("F1", CultureInfo.InvariantCulture);
+    }
+    private int getCurrent()
+    {
+        return ((int)currentTime);
+    }
+    private int getTotal()
+    {
+        return ((int)totalTime);
+    }
+    private string GetFormattedVolumePercentage()
+    {
+        return volumePercentage.ToString("F1", CultureInfo.InvariantCulture);
+    }
+    private void ToggleMute()
+    {
+        isMute = !isMute;
+        volumePercentage = isMute ? 0 : 100;
+        JSRuntime.InvokeVoidAsync("volumeHelper.setVolume", volumePercentage / 100);
+        StateHasChanged();
+    }
+
+    [JSInvokable("UpdateVolume")]
+    public async Task UpdateVolume(double percentage)
+    {
+        volumePercentage = percentage;
+        await JSRuntime.InvokeVoidAsync("volumeHelper.setVolume", percentage / 100);
+    }
+    private async Task ChangeVolume(ChangeEventArgs e)
+    {
+        if (double.TryParse(e.Value.ToString(), out double newVolume))
+        {
+            await JSRuntime.InvokeVoidAsync("volumeHelper.setVolume", volumePercentage / 100);
+        }
+        StateHasChanged();
+    }
+
+
+    private int getvolumePercentage(){
+        return ((int)volumePercentage);
+    }
+
+    
+    
+}

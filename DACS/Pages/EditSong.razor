@@ -1,0 +1,86 @@
+﻿@page "/Edit-Song"
+@page "/Edit-Song/{id:int}"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject IJSRuntime JSRuntime
+@inject IConfiguration config
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject IArtist ArtistService
+@attribute [Authorize]
+@if (isArtist)
+{
+    <div>
+        <section style="position: relative; top: 70px;">
+            <div class="container">
+                <div class="form-group">
+                    <EditForm Model="@Song" class="form mx-auto" OnValidSubmit="HandleSubmit" enctype="multipart/form-data" Enhance>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="input name">
+                                    <label for="Name">Tên bài hát</label>
+                                    <InputText @bind-Value="Song.SongName" class="form-control inputtext" id="Name" type="text" placeholder="Tên bài hát" />
+                                </div>
+                                <div class="input artist">
+                                    <label for="artist">Nghệ sĩ</label>
+                                    <InputNumber @bind-Value="artist.ArtistId" class="form-control inputtext" id="artist" type="text" placeholder="Nghệ sĩ" style="display:none" />
+                                    <input @bind="artist.ArtistName" type="text" id="uploadSongText" readonly />
+                                </div>
+                                <div class="input artist">
+                                    <label for="Description">Mô tả</label>
+                                    <InputText @bind-Value="Song.SongDescription" class="form-control inputtext" type="text" placeholder="Mô tả" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input cate">
+                                    <label for="cate">Thể loại</label>
+                                    <InputSelect @bind-Value="Song.SongGenreId" class="form-control" id="cate">
+                                        <option value="0" disabled selected>Chọn thể loại</option>
+                                        @foreach (var songGenre in songGenres)
+                                        {
+                                            <option value="@songGenre.SongGenreId">@songGenre.SongGenreName</option>
+                                        }
+                                    </InputSelect>
+                                </div>
+                                <div class="input song">
+                                    <label for="upload_song">File nhạc</label>
+                                    <InputFile id="upload_song" class="form-control" multiple style="display:none" accept=".mp3" OnChange="@UpdateFileName" />
+                                    <input @bind="SongfileName" type="text" id="uploadSongText" readonly>
+                                </div>
+                                <div class="input img">
+                                    <label for="upload_img">Hình ảnh</label>
+                                    <InputFile style="display:none" name="Song.SongImage" class="form-control" multiple id="upload_img" accept=".png,.jpg,.jpeg" OnChange="@HandleSelectedFile" />
+                                    <img id="image-preview" src="#" alt="Image Preview" style="display: none;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-group">
+                            <div class="create-btn">
+                                <button type="submit" class="btn btn-primary">UPLOAD</button>
+                            </div>
+                        </div>
+                    </EditForm>
+
+                </div>
+            </div>
+        </section>
+    </div>
+}
+
+<script>
+    window.previewImage = function (inputId, outputId) {
+        const input = document.getElementById(inputId);
+        const files = input.files;
+
+        if (files.length > 0) {
+            const fileReader = new FileReader();
+            fileReader.onload = function () {
+                const output = document.getElementById(outputId);
+                output.src = fileReader.result;
+                output.style.display = 'block';
+            };
+            fileReader.readAsDataURL(files[0]);
+        }
+        
+    };
+</script>
+

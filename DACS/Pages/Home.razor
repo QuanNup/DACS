@@ -1,0 +1,34 @@
+﻿@page "/"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@inject DataShared.SongData songData
+@inject IJSRuntime JSRuntime
+@using Blazor.QrCodeGen
+<PageTitle>Trang Chủ</PageTitle>
+
+
+<div class="spotify-listsongs">
+        @if(Songs.Count!=0)
+        {
+        @foreach (var Song in GetRandomSongs(Songs,20))
+            {
+            <a class="list no-decoration" @onclick="@(()=>SongDetail(Song.SongId))">
+                    <SongCard Songs="Song"/>
+                </a>
+            }
+        }
+        else
+        {         
+            for(int i = 0; i < 24; i++)
+            {
+            <a class="list no-decoration is-loading" >
+                <SongCard/>
+                </a>
+            }
+        }
+</div> 
+
+
+
+    
+ 

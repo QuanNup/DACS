@@ -1,0 +1,122 @@
+﻿@page "/Admin/ListSong"
+@inject HttpClient Http
+@attribute [Authorize(Roles = "Admin")]
+<section style="margin-top:40px;padding-left:120px;padding-right:120px">
+    <h1>Danh sách bài hát</h1>
+    <div>
+        <a href="/Admin/Edit-Song" class="btn btn-primary mb-3">Thêm bài hát</a>
+    </div>
+    <table class="table table-dark table-bordered">
+        <thead >
+        <tr>
+            <td>ID</td>
+            <td>Tên bài hát</td>
+            <td>Thể loại</td>
+            <td>Mô tả</td>
+            <td>Nghệ sĩ</td>
+            <td>Tệp tin bài hát</td>
+            <td>Hình ảnh</td>
+            <th>Hành động</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach(var songs in song)
+            {
+                <tr>
+                    <td>@songs.SongId</td>
+                    <td>@songs.SongName</td>
+                    <td>@songs?.SongGenre?.SongGenreName</td>
+                    <td>@songs?.SongDescription</td>
+                    <td>@songs?.Artist?.ArtistName</td>
+                    <td>
+                        <audio controls="controls">
+                            <source src="@GetSongUrl(songs?.SongFile)" type="audio/mp3" />
+                        </audio>
+                    </td>
+                    <td>
+                        <img src="@GetImageUrl(songs?.SongImage)" alt="Alternate Text" style="height:55px;width:55px" />
+                    </td>
+                    <td>
+                        <a href="/Admin/Edit-Song/@songs.SongId" class="btn btn-success btn-sm">Sửa</a>
+                        <button class="btn btn-danger btn-sm" @onclick="() => DeleteConfirmation(songs.SongId)">Xóa</button>
+                    </td>
+                </tr>
+            }           
+        </tbody>
+    </table>
+    @if (showConfirmation)
+    {
+        <div class="modal fade show" style="display: block;" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Xác nhận xóa</h5>
+                        <button type="button" class="close" aria-label="Close" @onclick="CancelDelete">
+                            <span aria-hidden="true" style="background-color:black">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Bạn có chắc chắn muốn xóa bài hát này không?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="CancelDelete">Hủy</button>
+                        <button type="button" class="btn btn-danger" @onclick="() => Delete(songToDelete)">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop fade show"></div>
+    }
+</section>
+
+
+
+@code {
+    private List<Song> song = new List<Song>();
+    private int songToDelete;
+    private bool showConfirmation = false;
+    protected override async Task OnInitializedAsync()
+    {
+        var response = await Http.GetFromJsonAsync<List<Song>>("api/songs");
+        if(response is not null)
+        {
+            song = response;
+        }
+    }
+    private string GetImageUrl(string? imageName)
+    {
+        if (!string.IsNullOrEmpty(imageName))
+        {
+            string baseUrl = $"https://localhost:7196/api/songs/file-images?imageName=";
+            return $"{baseUrl}{Uri.EscapeDataString(imageName)}";
+        }
+        return "/images/Spotify_favicon.png";
+    }
+    private string GetSongUrl(string? songName)
+    {
+        string baseUrl = $"https://localhost:7196/api/songs/file?filePath=";
+        return $"{baseUrl}{Uri.EscapeDataString(songName)}";
+    }
+    private async Task Delete(int id)
+    {
+        var result = await Http.DeleteAsync($"api/songs/{id}");
+        if (result.IsSuccessStatusCode)
+        {
+            song = song.Where(s => s.SongId != id).ToList();
+        }
+        else
+        {
+            var errorMessage = await result.Content.ReadAsStringAsync();
+        }
+    }
+    private void DeleteConfirmation(int id)
+    {
+        songToDelete = id;
+        showConfirmation = true;
+    }
+
+    private void CancelDelete()
+    {
+        showConfirmation = false;
+    }
+}

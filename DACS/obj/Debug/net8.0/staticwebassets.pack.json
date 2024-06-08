@@ -1,0 +1,109 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\obj\\Debug\\net8.0\\compressed\\g3ituply5q.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\obj\\Debug\\net8.0\\scopedcss\\bundle\\DACS.styles.css",
+      "PackagePath": "staticwebassets\\DACS.styles.css"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\blazored-typeahead.css",
+      "PackagePath": "staticwebassets\\css\\blazored-typeahead.css"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\css\\themes.css",
+      "PackagePath": "staticwebassets\\css\\themes.css"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\images\\PosterPlaceHolder.png",
+      "PackagePath": "staticwebassets\\images\\PosterPlaceHolder.png"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\images\\Spotify Logo.png",
+      "PackagePath": "staticwebassets\\images\\Spotify Logo.png"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\images\\Spotify_favicon.png",
+      "PackagePath": "staticwebassets\\images\\Spotify_favicon.png"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\images\\liked-songs-64.png",
+      "PackagePath": "staticwebassets\\images\\liked-songs-64.png"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\audioHelper.js",
+      "PackagePath": "staticwebassets\\js\\audioHelper.js"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\blazored-typeahead.js",
+      "PackagePath": "staticwebassets\\js\\blazored-typeahead.js"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\generateQRCode.js",
+      "PackagePath": "staticwebassets\\js\\generateQRCode.js"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\showError.js",
+      "PackagePath": "staticwebassets\\js\\showError.js"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\js\\vanilla-tilt.min.js",
+      "PackagePath": "staticwebassets\\js\\vanilla-tilt.min.js"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "E:\\DoAnCNTT\\DACS\\DACSServerApi\\DACS\\wwwroot\\songs\\thiên-lý-ơi.mp3",
+      "PackagePath": "staticwebassets\\songs\\thiên-lý-ơi.mp3"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.DACS.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.DACS.props",
+      "PackagePath": "build\\DACS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.DACS.props",
+      "PackagePath": "buildMultiTargeting\\DACS.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.DACS.props",
+      "PackagePath": "buildTransitive\\DACS.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

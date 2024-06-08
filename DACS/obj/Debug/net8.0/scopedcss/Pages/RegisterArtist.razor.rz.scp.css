@@ -1,0 +1,90 @@
+[b-geb843lj70] .container .form-group {
+    max-width: 400px;
+    width: 100%;
+}
+
+[b-geb843lj70] .inputtext {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 15px 0px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+}
+
+[b-geb843lj70] .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 30px 30px 10px 30px;
+}
+
+[b-geb843lj70] .container {
+    background-color: black;
+    padding: 20px;
+    min-height: 80vh;
+    max-width: 520px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 10px;
+}
+
+.upload-group[b-geb843lj70] {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+    .upload-group .create-btn button[b-geb843lj70] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        direction: row;
+        padding: 20px;
+        min-width: 200px;
+        border-radius: 2000px;
+        background-color: #117a37;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        right: 0;
+        font-weight: 900;
+        color: #fff;
+    }
+
+.input.img label[b-geb843lj70],
+.input.song label[b-geb843lj70] {
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+    .input.img label:hover[b-geb843lj70],
+    .input.song label:hover[b-geb843lj70] {
+        border-color: #117a37;
+    }
+
+.input.genres[b-geb843lj70] {
+    margin: 30px 0;
+}
+
+.inputgenres[b-geb843lj70] {
+    outline: none;
+}
+
+.input.img #image-preview[b-geb843lj70] {
+    display: block;
+    max-width: 200px;
+    border-radius: 20px;
+    max-height: 200px;
+    height: auto;
+    margin: 10px auto 0;
+    padding-bottom: 10px;
+}

@@ -1,0 +1,139 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = DACS
+build_property.RootNamespace = DACS
+build_property.ProjectDir = E:\DoAnCNTT\DACS\DACSServerApi\DACS\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\DoAnCNTT\DACS\DACSServerApi\DACS
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/AdminPages/ListGenres.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW5QYWdlc1xMaXN0R2VucmVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/AdminPages/ListUser.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW5QYWdlc1xMaXN0VXNlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Layout/AcccountLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEFjY2NvdW50TGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Layout/RangeInput.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFJhbmdlSW5wdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/RegisterPremium.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJQcmVtaXVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/UpdateAccount.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlQWNjb3VudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = UmVkaXJlY3RUb0xvZ2luLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/UI/SongCard.razor]
+build_metadata.AdditionalFiles.TargetPath = VUlcU29uZ0NhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/AdminPages/AddArtists.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW5QYWdlc1xBZGRBcnRpc3RzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-51l1yxq8fj
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/AdminPages/EditSongByAdmin.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW5QYWdlc1xFZGl0U29uZ0J5QWRtaW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-2vjtpgrqcm
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/AdminPages/ListArtist.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW5QYWdlc1xMaXN0QXJ0aXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-b3i7lwjejo
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/AdminPages/ListSong.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW5QYWdlc1xMaXN0U29uZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-2xasq3gffi
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/AdminPages/Song-Genre.razor]
+build_metadata.AdditionalFiles.TargetPath = QWRtaW5QYWdlc1xTb25nLUdlbnJlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-4gwjxvezmv
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Layout/FooterLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEZvb3RlckxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-1ei320dvkh
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4ls1uhruvw
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-0m1k523mkj
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Layout/Sidebar.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XFNpZGViYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-aq78r1umsi
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/ArtistsPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aXN0c1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-drkni3uu8f
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/EditSong.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRWRpdFNvbmcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-p2k4vfbavu
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/LikedSongs.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlrZWRTb25ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-v1p7l2qe3c
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-i1r1el4kog
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/Premium.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJlbWl1bS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-08zhnbuugh
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-4k0i09cgw3
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/RegisterArtist.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXJBcnRpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-geb843lj70
+
+[E:/DoAnCNTT/DACS/DACSServerApi/DACS/Pages/SongDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29uZ0RldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-3v4gm0voqi

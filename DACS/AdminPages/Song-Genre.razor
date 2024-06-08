@@ -1,0 +1,26 @@
+﻿@page "/admin/add-genres"
+@page "/admin/add-genres/{id:int}"
+@inject HttpClient Http
+@inject NavigationManager NavigationManager
+@attribute [Authorize(Roles = "Admin")]
+
+<section>
+    <div class="container">
+        <div class="form-group">
+            <h1 style="text-align:center;margin-bottom:100px">Thể loại bài hát</h1>
+            <EditForm Model="songGenres" class="form" OnValidSubmit="HandleSubmit"  Enhance>
+                <DataAnnotationsValidator />
+                        <div class="input name">
+                            <label for="Name">Tên thể loại bài hát</label>
+                            <InputText @bind-Value="songGenres.SongGenreName" class="form-control inputtext" id="Name" type="text" placeholder="Tên thể loại bài hát" />
+                            <ValidationMessage For="@(() => songGenres.SongGenreName)" class="text-danger" />
+                        </div>
+                        <div class="upload-group">
+                            <div class="create-btn">
+                                <button type="submit" class="btn btn-primary">UPLOAD</button>
+                            </div>
+                        </div>
+            </EditForm>
+        </div>
+    </div>
+</section>

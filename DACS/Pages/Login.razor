@@ -1,0 +1,66 @@
+﻿@page "/account/login"
+@inject AuthenticationStateProvider AuthStateProvider
+@inject NavigationManager NavManager
+@using DACS.Authentication
+@using Microsoft.AspNetCore.Components.Authorization
+@using SharedClassLibrary.Contracts
+@using SharedClassLibrary.DTOs
+@inject IUserAccount AccountService
+@inject IJSRuntime js
+
+<div class="container">
+        <section>
+            <EditForm Model="User" Enhance OnValidSubmit="HandleLogin" >
+                <DataAnnotationsValidator />
+            <h2 style="text-align:center;margin-bottom:20px">Đăng nhập</h2>
+            <hr />
+                <ValidationSummary class="text-danger" role="alert" />
+                <div class="form-floating mb-3">
+                    <InputText @bind-Value="User.Email" class="form-control inputtext" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                    <label for="email" class="form-label">Email</label>
+                    <ValidationMessage For="() => User.Email" class="text-danger" />
+                </div>
+                <div class="form-floating mb-3">
+                <InputText type="@passwordInputType" @bind-Value="User.Password" class="form-control inputtext" autocomplete="current-password" aria-required="true" placeholder="password" />
+                    <label for="password" class="form-label">Password</label>
+                    <button @onclick="TogglePasswordVisibility" type="button" class="button-open">
+                        <i class="bi @passwordIcon"></i>
+                    </button>
+                    <ValidationMessage For="() => User.Password" class="text-danger" />
+                </div>
+                
+                <button type="submit" class="w-100 btn btn-lg btn-primary button-submit">Đăng nhập</button>
+
+            </EditForm>
+        </section>
+</div>
+@code {
+    public LoginDTO User { get; set; } = new();
+    async Task HandleLogin()
+    {
+        var (flag, token) = await AccountService.LoginAccount(User);
+        if (flag)
+        {
+            var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
+            await customAuthStateProvider.UpdateAuthenticationState(token);
+            NavManager.NavigateTo("/", forceLoad: true);
+
+        }
+        return;
+    }
+    private string passwordIcon = "bi-eye-slash";
+    private string passwordInputType = "password";
+    private void TogglePasswordVisibility()
+    {
+        if (passwordInputType == "password")
+        {
+            passwordInputType = "text";
+            passwordIcon = "bi-eye";
+        }
+        else
+        {
+            passwordInputType = "password";
+            passwordIcon = "bi-eye-slash";
+        }
+    }
+}

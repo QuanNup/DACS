@@ -1,0 +1,164 @@
+﻿.D6IunHuzuULf_Sr88GOA {
+    padding:10px;
+}
+.NXiYChVp4Oydfxd7rT5r.XPjEhsPyuOvMZ9NsDrxT {
+    height: 40vh;
+    max-height: none;
+}
+
+.NXiYChVp4Oydfxd7rT5r {
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: var(--content-spacing);
+    position: relative;
+    width: 100%;
+    --fluid-height: clamp(250px, 250px +(100vw - var(--left-sidebar-width, 0px)* 1px - var(--panel-width, 0px)* 1px - 600px) / 424* 150, 400px);
+    --min-fluid-height: clamp(250px, 250px +(100vw - var(--left-sidebar-width, 0px)* 1px - var(--panel-width, 0px)* 1px - 600px) / 424* 90, 340px);
+    --min-fluid-height-large-header: clamp(280px, 280px +(100vw - var(--left-sidebar-width, 0px)* 1px - var(--panel-width, 0px)* 1px - 600px) / 424* 60, 340px);
+    --min-fluid-height-xlarge-header: clamp(350px, 350px +(100vw - var(--left-sidebar-width, 0px)* 1px - var(--panel-width, 0px)* 1px - 600px) / 424* 50, 400px);
+}
+.iWTIFTzhRZT0rCD0_gOK {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.contentSpacing {
+    max-width: var(--content-max-width);
+    padding: 0 var(--content-spacing);
+    width: 100%;
+}
+.RP2rRchy4i8TIp1CTmb7 {
+    -webkit-box-flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    z-index: 0;
+}
+.CmR9tHJ5ta6oWJlKBm3k {
+    display: inline-grid;
+    grid-template-columns: auto 1fr;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 8px;
+}
+.S9KkAiRE_O9ax0Jv_D1i svg {
+    height: 20px;
+    width: 20px;
+}
+
+.b0NcxAbHvRbqgs2S8QDg {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+
+.gxNUVX {
+    fill: var(--text-announcement, #0c67d3);
+    width: var(--encore-graphic-size-decorative-base, 24px);
+    height: var(--encore-graphic-size-decorative-base, 24px);
+}
+    .gxNUVX * {
+        vector-effect: non-scaling-stroke;
+    }
+.rEN7ncpaUeSGL9z0NGQR {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.rEN7ncpaUeSGL9z0NGQR {
+    line-height: normal;
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    word-break: break-word;
+}
+.Ydwa1P5GkCggtLlSvphs {
+    font-size: 1rem;
+    line-height: 2;
+    margin-top: 4px;
+}
+.eSg4ntPU2KQLfpLGXAww > :first-child:not(:only-child) {
+    margin-right: calc(var(--content-spacing) + 8px);
+}
+
+ .eSg4ntPU2KQLfpLGXAww > :not(:last-child) {
+    margin-right: var(--content-spacing);
+}
+
+.eSg4ntPU2KQLfpLGXAww > * {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.ix_8kg3iUb9VS5SmTnBY {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+.eSg4ntPU2KQLfpLGXAww > :not(:last-child) {
+    margin-right: var(--content-spacing);
+}
+
+.eSg4ntPU2KQLfpLGXAww > * {
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+@supports (overflow-wrap:anywhere) {
+    .aejTT {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (min-width: 768px) {
+    .aejTT {
+        font-size: 0.875rem;
+    }
+}
+
+
+.aejTT {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    font-family: var(--font-family, var(--encore-body-font-stack, CircularSp, CircularSp-Arab, CircularSp-Hebr, CircularSp-Cyrl, CircularSp-Grek, CircularSp-Deva, var(--fallback-fonts, sans-serif)));
+    background-color: transparent;
+    border-radius: var(--encore-button-corner-radius, 9999px);
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    touch-action: manipulation;
+    transition-duration: 33ms;
+    transition-property: background-color, border-color, color, box-shadow, filter, transform;
+    user-select: none;
+    vertical-align: middle;
+    transform: translate3d(0px, 0px, 0px);
+    padding-block-start: calc(var(--encore-spacing-tighter-4, 4px) - 1px);
+    padding-block-end: calc(var(--encore-spacing-tighter-4, 4px) - 1px);
+    padding-inline-start: calc(var(--encore-spacing-base, 16px) - 1px);
+    padding-inline-end: calc(var(--encore-spacing-base, 16px) - 1px);
+    border: 1px solid var(--essential-subdued, #878787);
+    color: var(--text-base, #000000);
+    min-inline-size: 0px;
+    min-block-size: var(--encore-control-size-smaller, 32px);
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+}

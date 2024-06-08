@@ -1,0 +1,47 @@
+﻿::deep .inputtext {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 15px 0px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+}
+.container ::deep form {
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    transform: translateX(-50%);
+    left: 50%;
+    height: 400px;
+}
+.container {
+    height:100%;
+}
+form button {
+    width: 110px;
+    background: linear-gradient(to right,#2bbb7f,#25632f);
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+}
+.button-submit {
+    margin: 20px 0;
+}
+.button-open {
+    position: absolute;
+    right: -25px; /* Điều chỉnh vị trí của nút ẩn/hiện mật khẩu */
+    top: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.password-container {
+    position: relative;
+}

@@ -1,0 +1,191 @@
+body[b-2vjtpgrqcm] {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    height: 100%;
+    font-weight: 600;
+    letter-spacing: normal;
+    /* background-color: #121212; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8) 40%, rgb(0, 0, 0) 100%);
+}
+
+label[b-2vjtpgrqcm] {
+    color: #fff;
+}
+
+.spotify-header[b-2vjtpgrqcm] {
+    display: flex;
+    /* justify-content: center; */
+    padding: 25px 0 10px;
+    border-bottom: 0 solid rgb(217,218,220);
+    /* text-align: center; */
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    background-color: rgb(8, 8, 8);
+}
+
+    .spotify-header .spotify-logo[b-2vjtpgrqcm] {
+        padding: 0 0 2px 2px;
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+[b-2vjtpgrqcm] .container {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    min-height: 60vh;
+    max-width: 750px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+    [b-2vjtpgrqcm] .container .form-group {
+        max-width: 700px;
+        width: 100%;
+    }
+
+[b-2vjtpgrqcm] .inputtext {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 15px 0px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border-radius: 20px;
+}
+
+[b-2vjtpgrqcm] .form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 30px 30px 10px 30px;
+}
+
+.form .create-group .input[b-2vjtpgrqcm]::not(.img,.song) {
+    padding-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .create-group .input label[b-2vjtpgrqcm] {
+    font-size: 0.875;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+form .create-group .input input:not(#upload_img,.song)[b-2vjtpgrqcm] {
+    width: 100%;
+    padding: 10px 5px;
+    margin: 15px 0px;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+
+[b-2vjtpgrqcm] #cate {
+    border-radius: 10px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin: 15px 0;
+    height: 40px;
+}
+
+
+
+
+
+.input.img input[type="file"][b-2vjtpgrqcm] {
+    /* Hiển thị input trên một dòng mới */
+    margin: 0 auto; /* Căn chỉnh input vào giữa */
+}
+
+.input.img #image-preview[b-2vjtpgrqcm] {
+    display: block; /* Hiển thị hình ảnh trên một dòng mới */
+    max-width: 200px; /* Độ rộng tối đa của hình ảnh */
+    border-radius: 20px;
+    max-height: 200px;
+    height: auto; /* Đảm bảo tỷ lệ khung hình đúng */
+    margin: 10px auto 0; /* Căn chỉnh hình ảnh vào giữa */
+    padding-bottom: 10px;
+}
+
+.upload-group[b-2vjtpgrqcm] {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+    .upload-group .create-btn button[b-2vjtpgrqcm] {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        direction: row;
+        padding: 20px;
+        min-width: 200px;
+        border-radius: 2000px;
+        background-color: #117a37;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        right: 0;
+        font-weight: 900;
+        color: #fff;
+    }
+
+.input.artist[b-2vjtpgrqcm] {
+    margin-top: 20px;
+}
+
+.upload-group .create-btn button:hover[b-2vjtpgrqcm] {
+    box-shadow: 0 0 4px #fff;
+    padding: 22px
+}
+
+.input.img input[type="file"][b-2vjtpgrqcm] {
+    border-radius: 20px;
+    padding: 7px 0;
+}
+
+.input.img label[b-2vjtpgrqcm],
+.input.song label[b-2vjtpgrqcm] {
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+    .input.img label:hover[b-2vjtpgrqcm],
+    .input.song label:hover[b-2vjtpgrqcm] {
+        border-color: #117a37;
+    }
+
+.input.song #upload-song[b-2vjtpgrqcm] {
+    margin-top: -4px;
+}
+
+section[b-2vjtpgrqcm] {
+    display: block;
+}
+
+input[type="text"][b-2vjtpgrqcm] {
+    margin: 15px 0;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}

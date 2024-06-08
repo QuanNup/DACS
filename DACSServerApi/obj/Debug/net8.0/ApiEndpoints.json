@@ -1,0 +1,2415 @@
+[
+  {
+    "ContainingType": "DACSServerApi.Controllers.AccountController",
+    "Method": "Login",
+    "RelativePath": "api/Account/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDTO",
+        "Type": "SharedClassLibrary.DTOs.LoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DACSServerApi.Controllers.AccountController",
+    "Method": "Register",
+    "RelativePath": "api/Account/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDTO",
+        "Type": "SharedClassLibrary.DTOs.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "GetArtists",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Artist, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "RegisterArtist",
+    "RelativePath": "api/Artists",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "GetArtist",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Artist, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "PutArtist",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "DeleteArtist",
+    "RelativePath": "api/Artists/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "GetArtistbyUser",
+    "RelativePath": "api/Artists/artistuser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Artist, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "GetArtistWithSong",
+    "RelativePath": "api/Artists/artistwithsong",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Artist, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "GetArtistWithSongById",
+    "RelativePath": "api/Artists/artistwithsong/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "GetArtistIdForCurrentUser",
+    "RelativePath": "api/Artists/current",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Artist",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.ArtistsController",
+    "Method": "GetArtistsUnApproved",
+    "RelativePath": "api/Artists/UnApproved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Artist, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controllers.LikedSongsController",
+    "Method": "GetListLikedSong",
+    "RelativePath": "api/likedsongs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.LikedSong, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controllers.LikedSongsController",
+    "Method": "GetLikedSongs",
+    "RelativePath": "api/likedsongs/{songId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controllers.LikedSongsController",
+    "Method": "PostLikeSong",
+    "RelativePath": "api/likedsongs/{songId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.LikedSong",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controllers.LikedSongsController",
+    "Method": "DeleteLikedSong",
+    "RelativePath": "api/likedsongs/{songId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "songId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.LikedSong",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controllers.LikedSongsController",
+    "Method": "GetListLikedSongs",
+    "RelativePath": "api/likedsongs/GetLikedSongs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.LikedSong",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongGenresController",
+    "Method": "GetAllSongGenres",
+    "RelativePath": "api/song-genres",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.SongGenre, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongGenresController",
+    "Method": "PostSongGenre",
+    "RelativePath": "api/song-genres",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenreName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.SongGenre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongGenresController",
+    "Method": "GetSongGenre",
+    "RelativePath": "api/song-genres/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.SongGenre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongGenresController",
+    "Method": "PutSongGenre",
+    "RelativePath": "api/song-genres/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenreName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.SongGenre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongGenresController",
+    "Method": "DeleteSongGenre",
+    "RelativePath": "api/song-genres/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.SongGenre",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "GetSongs",
+    "RelativePath": "api/songs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "AddSongAsync",
+    "RelativePath": "api/songs",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SongId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongFile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApproved",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenre.SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenre.SongGenreName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "AlbumId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.ReleaseDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Song",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "songFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Song",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "GetSongByIdAsync",
+    "RelativePath": "api/songs/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Song",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "DeleteSongAsync",
+    "RelativePath": "api/songs/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Song",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "UpdateSongAsync",
+    "RelativePath": "api/songs/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "SongId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongFile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApproved",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenre.SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenre.SongGenreName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "AlbumId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.ReleaseDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Song",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "songFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Song",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "AddSongByAdminAsync",
+    "RelativePath": "api/songs/AddSongByAdmin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "SongId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongFile",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsApproved",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenre.SongGenreId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "SongGenre.SongGenreName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Artist.IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "AlbumId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.AlbumImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.ReleaseDate",
+        "Type": "System.DateOnly",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Song",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistDescription",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Genres",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.ArtistImage",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Type",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.UserId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Songs",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.Albums",
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Album, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.User.AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Album.Artist.IsApprovedArtist",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "imageFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "songFile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.Entities.Song",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "GetMusic",
+    "RelativePath": "api/songs/file",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filePath",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "GetImage",
+    "RelativePath": "api/songs/file-images",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "imageName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "GetApprovedSongs",
+    "RelativePath": "api/songs/IsApproved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "searchSong",
+    "RelativePath": "api/songs/Search/{searchText}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "searchText",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.SongsController",
+    "Method": "GetSongNotApproved",
+    "RelativePath": "api/songs/UnApproved",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[SharedClassLibrary.Entities.Song, SharedClassLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.UserController",
+    "Method": "GetUserById",
+    "RelativePath": "api/user",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.DTOs.UserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.UserController",
+    "Method": "GetProfile",
+    "RelativePath": "api/user/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.DTOs.UserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DACSServerApi.Controller.UserController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/user/update-profile",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "FirstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "LastName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateOfBirth",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "IsPremium",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "ImageUser",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NormalizedUserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NormalizedEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "PasswordHash",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SecurityStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ConcurrencyStamp",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PhoneNumberConfirmed",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "TwoFactorEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "LockoutEnd",
+        "Type": "System.Nullable\u00601[[System.DateTimeOffset, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "LockoutEnabled",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      },
+      {
+        "Name": "AccessFailedCount",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "SharedClassLibrary.DTOs.UserDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

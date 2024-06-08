@@ -1,0 +1,17 @@
+.truncate[b-b3i7lwjejo] {
+    max-width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.short-description[b-b3i7lwjejo] {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.full-description[b-b3i7lwjejo] {
+    max-width: 500px;
+}
